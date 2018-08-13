@@ -1,0 +1,124 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+{% load widget_tweaks %}
+
+{% block content %}
+
+<body>
+
+  <!-- 1st section-->
+  <div class="container">
+<!--    <div class = "page-header">
+      <h1>Mapping the Movements</h1>
+    </div> -->
+
+    <img src= "{% static 'images/logo.jpg' %}" class="center rounded" alt="Responsive image"/>
+
+
+    <div class="jumbotron">
+     <!-- Search form -->
+     <form method="post" novalidate>
+       {% csrf_token %}
+       {{ form.source }}
+           <div class="input-group">
+               {% render_field form.keyword class+="form-control" style+="color: white" placeholder='Enter Keyword...' %}
+             <span class = "input-group-btn">
+               <button class="btn btn-search" type="submit"  style="color: white" target='_blank'><i class="fa fa-search fa-fw"></i> Search</button>
+             </span>
+          </div>
+
+          <!-- Checkboxes -->
+          <div class="col-sm-2">
+            {% render_field form.twitter class+="form-check-input" id+="inlineCheckbox1" %}
+            <label class="form-check-label" for="inlineCheckbox1">Twitter</label>
+          </div>
+          <div class="col-sm-2">
+            {% render_field form.reddit class+="form-check-input" id+="inlineCheckbox2" %}
+            <label class="form-check-label" for="inlineCheckbox2">Reddit</label>
+          </div>
+
+          <!-- Date Picker -->
+          <div class='a col-sm-3'> From:
+              <div class="form-group">
+                  <div class='input-group date' id='datetimepicker'>
+                    {% render_field form.startdate class+="form-control" %}
+                  </div>
+              </div>
+          </div>
+          <div class='a col-sm-3' id="label"> To:
+              <div class="form-group">
+                  <div class='input-group date' id='datetimepicker2' style="padding-left: 10px">
+                      {% render_field form.enddate class+="form-control" style+="color:white" %}
+                  </div>
+              </div>
+          </div>
+
+      </form>
+    </div>
+  </div>
+<!--
+    <form action="py/Controller.py" method="get">
+      <div class="input-group">
+      	<input type="text" class="form-control" name="Keyword" id="keyword" style="color: white" value="" placeholder="Search for keyword...">
+            <span class="input-group-btn">
+              <button class="btn btn-search" type="submit" onclick = "myFunction()" style="color: white" target='_blank'><i class="fa fa-search fa-fw"></i> Search</button>
+
+            </span>
+      </div>
+
+     <!-- Checkboxes
+  <div class="form-horizontal">
+    <div class = "form-group" >
+      <div class="col-sm-2">
+        <input class="form-check-input" name="Twitter" type="checkbox" id="inlineCheckbox1" value="option1" checked>
+        <label class="form-check-label" for="inlineCheckbox1">Twitter</label>
+      </div>
+      <div class="col-sm-2">
+        <input class="form-check-input" name = "Reddit" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Reddit</label>
+      </div>
+      <div class='col-sm-3'> From:
+          <div class="form-group">
+              <div class='input-group date' id='datetimepicker'>
+                  <input type='text' name="Date1" class="form-control" />
+                  <span class="input-group-addon" style="color: black">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+              </div>
+          </div>
+      </div>
+      <div class='col-sm-3' id="label"> To:
+          <div class="form-group">
+              <div class='input-group date' id='datetimepicker2' style="padding-left: 10px">
+                  <input type='text' name="Date2" class="form-control"/>
+                  <span class="input-group-addon" style="color: black">
+                      <span class="glyphicon glyphicon-calendar"></span>
+                  </span>
+              </div>
+          </div>
+      </div>
+      <script type="text/javascript">
+          $(function () {
+              $('#datetimepicker').datepicker();
+              $('#datetimepicker2').datepicker()
+          });
+      </script>
+    </div>
+  </div>
+</form>
+-->
+
+
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <!-- <script src="js/bootstrap.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+</body>
+
+{% endblock %}

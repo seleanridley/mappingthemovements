@@ -1,0 +1,132 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+  font: 17px Calibri;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: #000;
+}
+body {
+  color: #fff;
+  text-align: center;
+  text-shadow: 0 1px 3px rgba(0,0,0,.5);
+}
+
+table
+    {
+        width: 100%;
+        height: 100%;
+        overflow-y: auto;
+        display: block;
+        font: 17px Calibri;
+    }
+table, th, td
+    {
+        border: solid 1px #DDD;
+        border-collapse: collapse;
+        padding: 2px 3px;
+        text-align: center;
+    }
+/*
+p {
+  color: white;
+  font: bold 28px Sans-Serif;
+  position: absolute;
+  width: 200px;
+  display: none;
+}
+p{
+  text-align: center;
+}
+*/
+.container {
+/*  height: 1000px;  */
+  width: 100%;
+  background-color: #000;
+  position:relative;
+}
+
+.input-group {
+  width: 40%;
+  left: 250px;
+}
+
+.newsicons {
+  width: 80px;
+  height: 60px;
+}
+.form-inline {
+padding-top: 25px;
+}
+
+.input-group {
+  padding-left: 10px;
+}
+.date {
+  padding-top: 25px;
+  padding-left: 10px;
+  position: relative;
+  width: 20%
+}
+.dropdown-toggle {
+  padding-top: 25px;
+  padding-left: 25px;
+  background-color: #000;
+}
+/*
+ * Footer
+ */
+
+.mastfoot {
+  color: #999; /* IE8 proofing */
+  color: rgba(255,255,255,.5);
+}
+
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}

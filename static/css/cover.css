@@ -1,0 +1,191 @@
+/*
+ * Globals
+ */
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+input {
+  color: #fff;
+}
+
+div.a {
+  color: white;
+}
+/* Custom default button */
+.btn-secondary,
+.btn-secondary:hover,
+.btn-secondary:focus {
+  color: #000;
+  text-shadow: none; /* Prevent inheritance from `body` */
+  background-color: #fff;
+  border: .05rem solid #fff;
+}
+
+p {
+  color: white;
+  padding: 0px 0px 0px 0px;
+  font-family: "Times New Roman", Times, serif;
+  font-size: medium;
+}
+/*
+ * Base structure
+ */
+
+html,
+body {
+  /* color: #fff; */
+  height: 100%;
+  width: 100%;
+  background-color: #000;
+}
+label {
+  color: #fff;
+}
+.label {
+  color: #fff;
+}
+div {
+  color: #000;
+}
+
+.form-control {
+  color: #fff;
+}
+
+body {
+/*  display: -ms-flexbox; */
+  display: flex;
+  /*text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black; */
+  /*text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);*/
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+}
+
+.cover-container {
+  max-width: 42em;
+}
+.container {
+/*  height: 1000px;  */
+  width: 100%;
+  height: 100%;
+  background-color: #000;
+  position:relative;
+}
+
+.btn {
+  border: 1px solid white;
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+.form-control {
+  background-color: black;
+}
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+
+.masthead-brand {
+  margin-bottom: 0;
+}
+
+
+/* CSS used here will be applied after bootstrap.css */
+.navbar-fixed-left {
+  width: 200px;
+  position: fixed;
+  border-radius: 0;
+  height: 100%;
+}
+.navbar {
+    background-color: #000;
+}
+
+.navbar-added {
+  text-align: center;
+}
+
+.navbar-fixed-left .navbar-nav > li {
+  float: none;  /* Cancel default li float: left */
+  width: 180px;
+  background-color: #000;
+}
+
+.navbar-fixed-left + .container {
+  padding-left: 150px;
+}
+
+/*
+ * Affix and center
+ */
+
+@media (min-width: 768px) {
+  /* Pull out the header and footer */
+  .masthead {
+    position: fixed;
+    top: 0;
+  }
+  .mastfoot {
+    position: fixed;
+    bottom: 0;
+  }
+  /* Start the vertical centering */
+  .site-wrapper-inner {
+    vertical-align: middle;
+  }
+  /* Handle the widths */
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 100%; /* Must be percentage or pixels for horizontal alignment */
+  }
+}
+
+@media (min-width: 992px) {
+  .masthead,
+  .mastfoot,
+  .cover-container {
+    width: 700px;
+  }
+}
+
+
+/*
+ * Cover
+ */
+/*.cover {
+  padding: 0 1.5rem;
+} */
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+.jumbotron {
+  background-color: #000;
+}
+.btn {
+  background-color: #000000;
+}
+/*
+ * Search bar
+ */
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
