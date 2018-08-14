@@ -13,7 +13,7 @@ class RedditAPI():
 		self.reddit = praw.Reddit(user_agent = 'userAgent', client_id = 'Wtyt6ZzLdbI6NA', client_secret = '3BxHtc7XdjL28i-xRS_NQPMV_P4')
 		self.subData = {}
 		self.subData['submissions'] = []
-		self.subData['todaySubs'] = []
+		#self.subData['todaySubs'] = []
 
 	def get_date(self, submission):
 		time = submission.created
@@ -24,8 +24,11 @@ class RedditAPI():
 		return datetime.fromtimestamp(time)
 
 	def search(self, keyword, date_start, date_end):
+		#print('in reddit search')
 		for submission in self.reddit.subreddit('politics+worldnews').top(limit = None):
+			#print('in for loop!')
 			if keyword.lower() in str(submission.title).lower() and (self.get_date(submission) > date_start and self.get_date(submission) < date_end):
+				#print('in if statement')
 				self.subData['submissions'].append({
 					'title': str(submission.title),
 					'subreddit': str(submission.subreddit),

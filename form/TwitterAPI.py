@@ -2,28 +2,75 @@
 	Contributors: Emily Simoneau and Cameron Bates
 '''
 #from . import APICall
-from twython import Twython
+from twitter import Twitter, OAuth, TwitterHTTPError, TwitterStream
 import json
 ##from datetime import date, datetime
 
 class TwitterAPI():	
 	def __init__(self):
 		self.results = {}
-		with open("twitter_credentials.json", "r") as file:  
-			self.creds = json.load(file)
+		self.creds = {"ACCESS_TOKEN": "80730868-mdZXRx2An0GpP5U2hVGQltqjpyTEeKSUG9wITCbSL", "ACCESS_SECRET": "gjIdGLRVc3H0CSHztY8ZYcU9gReUA9FSWIBRMZXB1MvEe", "CONSUMER_SECRET": "zAf2cvPkAr3hy527OBmVopkpRwJpGKN0viy8GZSzVxyFW8ksch", "CONSUMER_KEY": "duuKptCTsD3rt7ZvGlyUg95KQ"}
 		
 
 	def search(self, keyword, date_start, date_end):
-		self.results = {'user': [], 'date': [], 'text': [], 'favorite_count': [], 'user_loc':[]}
-		python_tweets = Twython(self.creds['CONSUMER_KEY'], self.creds['CONSUMER_SECRET'])
+		#print('in twitter search')
+		self.results = {'user': [], 'date': [], 'text': [], 'favorite_count': [], 'user_loc':[], 'retweet_count':[]}
+		self.wc_results = {'count' : {}};
+		self.lc_results = {'count' : {}};
+		oauth = OAuth(self.creds['ACCESS_TOKEN'], self.creds['ACCESS_SECRET'], self.creds['CONSUMER_KEY'], self.creds['CONSUMER_SECRET'])
+		twitter = Twitter(auth=oauth)
 		##date_start_str = self.date_to_string(date_start)
 		##date_end_str = self.date_to_string(date_end)
-		for status in python_tweets.search(q=keyword, until=date_end, since=date_start)['statuses']:
+		tweets = twitter.search.tweets(q=keyword, until=date_end, since=date_start, result_type='popular', count=100)
+		'''if type(tweets) is dict:
+			print('tweets is dict')
+			print(tweets.keys())
+		else:
+			print('tweets is not dict')
+			print(tweets)'''
+		for status in twitter.search.tweets(q=keyword, until=date_end, since=date_start, result_type='popular', count=100)['statuses']:
 			self.results['user'].append(status['user']['screen_name'])
+			##print('in for loop!')
 			self.results['date'].append(status['created_at'])
 			self.results['text'].append(status['text'])
 			self.results['favorite_count'].append(status['favorite_count'])
 			self.results['user_loc'].append(status['user']['location'])
+			self.results['retweet_count'].append(status['retweet_count'])
+		self.format_data()
+	
+	def format_data(self) :
+		words = []
+		locs = []
+		freq = []
+		locs_freq = []
+		tweets = self.results["text"]
+		locations = self.results["user_loc"]
+		for tweet in tweets:
+			split_content = tweet.split(" ")
+			for word in split_content:
+				if word in words:
+					freq[words.index(word)] = freq[words.index(word)] + 1
+				else:
+					freq.append(1)
+					words.append(word)
+		for location in locations:
+			if location in locs:
+				locs_freq[locs.index(location)] = locs_freq[locs.index(location)] + 1
+			else:
+					locs_freq.append(1)
+					locs.append(location)
+		max_value = max(freq)
+		max_loc = max(locs_freq)
+		index = 0
+		for entry in freq:
+			self.wc_results['count'][words[index]] = entry
+			index = index + 1 
+		index = 0
+		for entry in locs_freq:
+			self.lc_results['count'][locations[index]] = entry
+			index = index + 1
+			##print('Made it here too')
+	
 	'''
 	def date_to_string(self, date_obj) :
 		date_string = str(date_obj.year) + '-'
