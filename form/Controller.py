@@ -24,18 +24,18 @@ class SearchParam(object):
 		endDate_str = search_param.endDate.strftime('%Y-%m-%d')
 
 		##News API
-		news_api = NewsAPI()
+		news_api = NewsAPI.NewsAPI()
 		news_api.search(search_param.keyword, startDate_str, endDate_str)
 		news_api.parse_results()
 
 		##Social Media API
-		##if search_param.platform = 'Twitter' run twitter search
-		twitter_api = TwitterAPI()
-		twitter_api.search(search_param.keyword, startDate_str, endDate_str)
-		twitter_api.parse_results()
+		if search_param.platform = 'Twitter' ##run twitter search
+			twitter_api = TwitterAPI.TwitterAPI()
+			twitter_api.search(search_param.keyword, startDate_str, endDate_str)
+			twitter_api.parse_results()
 
 
-		##elif search_param.platform = 'Reddit' run reddit search
-		reddit_api = RedditAPI()
-		reddit_api.search(search_param.keyword, search_param.startDate, search_param.endDate)
-		reddit_api.parse_results()
+		elif search_param.platform = 'Reddit' ##run reddit search
+			reddit_api = redditAPI.RedditAPI()
+			reddit_api.search(search_param.keyword, search_param.startDate, search_param.endDate)
+			reddit_api.parse_results()

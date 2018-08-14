@@ -7,11 +7,17 @@ def index(request):
     form = UserForm(request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
-            search = Controller.SearchParam(UserForm.keyword, UserForm.startdate, UserForm.enddate, UserForm.twitter, UserForm.reddit)
+            user_keyword = form['keyword'].value()
+            start_date = form['startdate'].value()
+            end_date = form['enddate'].value()
+            twitter = form['twitter'].value()
+            reddit = form['reddit'].value()
+            
+            search = Controller.SearchParam(start_date, end_date, user_keyword, twitter, reddit)
             search.runSearch()
-            print(form.cleaned_data['keyword'])
+            #print(form.cleaned_data['keyword'])
 
-            #return redirect('datavis')
+            return redirect('datavis')
             #pass
         else:
             print(form['keyword'].value())
