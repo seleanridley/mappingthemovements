@@ -7,7 +7,7 @@ def index(request):
     form = UserForm(request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
-            search = SearchParam(UserForm.keyword, UserForm.startdate, UserForm.enddate, UserForm.twitter, UserForm.reddit)
+            search = Controller.SearchParam(UserForm.keyword, UserForm.startdate, UserForm.enddate, UserForm.twitter, UserForm.reddit)
             search.runSearch()
             print(form.cleaned_data['keyword'])
 
