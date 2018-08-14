@@ -3,8 +3,8 @@ from bootstrap_datepicker.widgets import DatePicker
 
 class UserForm(forms.Form):
     keyword = forms.CharField(max_length=180)
-    twitter = forms.BooleanField()
-    reddit = forms.BooleanField()
+    twitter = forms.BooleanField(required=False)
+    reddit = forms.BooleanField(required=False)
     startdate = forms.DateTimeField(
                                     widget=DatePicker(
                                         options = {
@@ -19,7 +19,6 @@ class UserForm(forms.Form):
                                         "autoclose": True
                                         }
                                     ) )
-    #enddate = forms.DateTimeField(widget=DateTimePicker)
 
 
     def clean(self):
@@ -27,5 +26,5 @@ class UserForm(forms.Form):
         keyword = cleaned_data.get('keyword')
         twitter = cleaned_data.get('twitter')
         reddit = cleaned_data.get('reddit')
-        if not keyword and not twitter and not reddit:
+        if not keyword:
             raise forms.ValidationError('You have to search something!')
