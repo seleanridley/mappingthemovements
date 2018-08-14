@@ -1,0 +1,56 @@
+{% extends "base2.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<body>
+
+  <div class="container-fluid" id="home">
+    <div class="row">
+     <div class="col-md-6 grid">
+       <div id='cloud-container'></div>
+
+          <script src="{% static 'js/wordcloud.js' %}"></script>
+            <script>
+              WordCloud({
+                container: '#cloud-container',
+                data: 'twitterWCData.json'
+              });
+          </script>
+    </div>
+
+    <div class="col-md-6 grid datavis" id="showData">
+       <table id="newsapi-table">
+
+      </table>
+      <script>
+          $(document).ready(function () {
+            $.getJSON("{% static 'json/newsdata.json' %}",function(data){
+              var newsapi_data = '';
+              for( var i = 0; i < data.articles.length; i++) {
+                newsapi_data += "<tr>";
+                newsapi_data += '<td><img src=' + data.articles[i].urlToImage + ' class = "newsicons pull-left" ></img>';
+                newsapi_data += '<a href="' + data.articles[i].url + '" target="_blank">' + data.articles[i].title + '</a>';
+                newsapi_data +=  "<br>" + data.articles[i].author +"</td>";
+                newsapi_data += "</tr>";
+              }
+              $('#newsapi-table').append(newsapi_data);
+            });
+          });
+      </script>
+    </th>
+  </tr>
+    </div>
+     </div>
+ </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <!-- <script src="js/bootstrap.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+{% endblock %}

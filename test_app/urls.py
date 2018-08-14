@@ -22,5 +22,6 @@ from form.views import index
 urlpatterns = [
     path('', index ),
     url(r'^datavis/$', views.datavis, name='datavis'),
+    url(r'^wordcloud/$', views.wordcloud, name='wordcloud'),
     path('admin/', admin.site.urls),
 ]
