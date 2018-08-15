@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+
+{% load staticfiles %}
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mapping the Movements</title>
+
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datepicker/1.6.4/js/bootstrap-datepicker.js"></script>
+  <script src="https://d3js.org/d3.v4.min.js"></script>
+  <script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+
+  <!-- Random number generator -->
+  <script src="//cdnjs.cloudflare.com/ajax/libs/seedrandom/2.4.3/lib/alea.min.js"></script>
+  <!-- d3-cloud library -->
+  <script src="https://cdn.rawgit.com/eligrey/canvas-toBlob.js/f1a01896135ab378aa5c0118eadd81da55e698d8/canvas-toBlob.js"></script>
+  <script src="https://cdn.rawgit.com/eligrey/FileSaver.js/e9d941381475b5df8b7d7691013401e171014e89/FileSaver.min.js"></script>
+  <!-- d3-cloud library -->
+  <script src="{% static "js/d3.layout.cloud.js" %}"></script>
+  <link rel="stylesheet" type='text/css' href="{% static "css/style.css" %}" />
+
+
+<link rel="stylesheet" href="{% static "css/bootstrap.css" %}" type="text/css" />
+<link rel="stylesheet" href="{% static "css/bootstrap-theme/style.css" %}">
+<link rel="stylesheet" href="{% static "css/datavis.css" %}" type="text/css">
+
+</head>
+
+{% block content %}
+{% endblock %}
+
+</html>

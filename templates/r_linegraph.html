@@ -1,0 +1,86 @@
+{% extends "base2.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<body>
+  <!--navigation-->
+<div class="container">
+  <nav class="navbar justify-content-between">
+    <div class="navbar-header pull-left">
+      <a href="{% url 'index' %}">
+        <img src="{% static 'images/logo.jpg' %}"  width="100px" height="80px">
+      </a>
+    </div>
+
+<!-- Visualization Selection -->
+    <div id="selector" class="menubar">
+    <select class="form-control options fa fa-search fa-fw pull-right" style="width:90%">
+        <option>Change Visualization</option>
+        <option value="{% url 'bargraph' %}">Bar Graph</option>
+        <option value="{% url 'piechart' %}">Pie Chart</option>
+    </select>
+</div>
+
+<script>
+    $(function(){
+        // bind change event to select
+        $('#selector select').bind('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+         });
+     });
+ </script>
+  </nav>
+<!-- End Navigation -->
+    <div class="row">
+     <div class="col-md-6 grid">
+     <div class="pull-left" id='cloud-container'></div>
+     <svg width="400" height="500"></svg>
+     <button class="button" id='saveButton'>Export my D3 visualization to png</button>
+          <script src="{% static 'js/r_linegraph.js' %}"></script>
+          <script>
+            LineGraph({
+              container: '#cloud-container',
+              data: "{% static 'json/redditData.json' %}"
+            });
+            SaveButton();
+          </script>
+    </div>
+
+    <div class="col-md-6 grid datavis" id="showData">
+       <table id="newsapi-table">
+
+      </table>
+      <script>
+          $(document).ready(function () {
+            $.getJSON("{% static 'json/newsdata.json' %}",function(data){
+              var newsapi_data = '';
+              for( var i = 0; i < data.articles.length; i++) {
+                newsapi_data += "<tr>";
+                newsapi_data += '<td><img src=' + data.articles[i].urlToImage + ' class = "newsicons pull-left" ></img>';
+                newsapi_data += '<a href="' + data.articles[i].url + '" target="_blank">' + data.articles[i].title + '</a>';
+                newsapi_data +=  "<br>" + data.articles[i].author +"</td>";
+                newsapi_data += "</tr>";
+              }
+              $('#newsapi-table').append(newsapi_data);
+            });
+          });
+      </script>
+    </div>
+  </div>
+ </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <!-- <script src="js/bootstrap.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+{% endblock %}

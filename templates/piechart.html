@@ -1,0 +1,141 @@
+{% extends "base2.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<body>
+
+  <!--navigation-->
+<div class="container-fluid">
+  <nav class="navbar justify-content-between">
+    <div class="navbar-header pull-left">
+      <a href="{% url 'index' %}">
+        <img src="{% static 'images/logo.jpg' %}"  width="100px" height="80px">
+      </a>
+    </div>
+
+    <div id="selector" class="menubar">
+    <select class="form-control options fa fa-search fa-fw pull-right" style="width:90%">
+        <option >Change Visualization</option>
+        <option value="{% url 'bargraph' %}">Bar Graph</option>
+        <option value="{% url 'r_linegraph' %}">Line Graph</option>
+    </select>
+</div>
+<script>
+    $(function(){
+        // bind change event to select
+        $('#selector select').bind('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+         });
+     });
+ </script>
+  </nav>
+<!-- End Navigation -->
+
+
+  <!-- grid -->
+    <div class="row">
+     <div class="col-md-6 grid">
+       <div id='cloud-container'></div>
+
+       <svg width="400" height="500"></svg>
+       <div>
+       <button class="button" id='saveButton'>Export my D3 visualization to png</button>
+     </div>
+      <script src="{% static 'js/piechart.js' %}"></script>
+      <script>
+        PieChart({
+          container: '#cloud-container',
+          data: "{% static 'json/subredditData.json' %}"
+        });
+        SaveButton();
+      </script>
+
+    </div>
+
+    <div class="col-md-6 grid datavis" id="showData">
+       <table id="newsapi-table">
+
+      </table>
+      <script>
+          $(document).ready(function () {
+            $.getJSON("{% static 'json/newsdata.json' %}",function(data){
+              var newsapi_data = '';
+              for( var i = 0; i < data.articles.length; i++) {
+                newsapi_data += "<tr>";
+                newsapi_data += '<td><img src=' + data.articles[i].urlToImage + ' class = "newsicons pull-left" ></img>';
+                newsapi_data += '<a href="' + data.articles[i].url + '" target="_blank">' + data.articles[i].title + '</a>';
+                newsapi_data +=  "<br>" + data.articles[i].author +"</td>";
+                newsapi_data += "</tr>";
+              }
+              $('#newsapi-table').append(newsapi_data);
+            });
+          });
+      </script>
+    </th>
+  </tr>
+    </div>
+     </div>
+ </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <!-- <script src="js/bootstrap.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+{% endblock %}
+
+
+
+
+
+
+
+
+
+
+
+<svg width="960" height="500"></svg>
+<script src="https://d3js.org/d3.v4.min.js"></script>
+<script>
+var svg = d3.select("svg"),
+    width = +svg.attr("width"),
+    height = +svg.attr("height"),
+    radius = Math.min(width, height) / 2,
+    g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+var color = d3.scaleOrdinal(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+var pie = d3.pie()
+    .sort(null)
+    .value(function(d) { return d.frequency; });
+var path = d3.arc()
+    .outerRadius(radius - 10)
+    .innerRadius(0);
+var label = d3.arc()
+    .outerRadius(radius - 40)
+    .innerRadius(radius - 40);
+d3.json("subredditData.json", function(data) {
+    data.forEach(function(d) {
+        d.subreddit = d.subreddit;
+        d.frequency = +d.frequency;
+    });
+  var arc = g.selectAll(".arc")
+    .data(pie(data))
+    .enter().append("g")
+      .attr("class", "arc");
+  arc.append("path")
+      .attr("d", path)
+      .attr("fill", function(d) { return color(d.data.subreddit); });
+  arc.append("text")
+      .attr("transform", function(d) { return "translate(" + label.centroid(d) + ")"; })
+      .attr("dy", "0.35em")
+      .text(function(d) { return d.data.subreddit; });
+});
+</script>

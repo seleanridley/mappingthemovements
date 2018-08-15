@@ -1,0 +1,129 @@
+{% extends "base2.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<body>
+  <!--navigation-->
+<div class="container-fluid">
+  <nav class="navbar justify-content-between">
+    <div class="navbar-header pull-left">
+      <a href="{% url 'index' %}">
+        <img src="{% static 'images/logo.jpg' %}"  width="100px" height="80px">
+      </a>
+    </div>
+
+    <div id="selector" class="menubar">
+    <select class="form-control options fa fa-search fa-fw pull-right" style="width:90%">
+        <option >Change Visualization</option>
+        <option value="{% url 'r_linegraph' %}">Line Graph</option>
+        <option value="{% url 'piechart' %}">Pie Chart</option>
+    </select>
+</div>
+<script>
+    $(function(){
+        // bind change event to select
+        $('#selector select').bind('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+         });
+     });
+ </script>
+  </nav>
+<!-- End Navigation -->
+
+
+  <!-- grid -->
+    <div class="row">
+     <div class="col-md-6 grid">
+           <script>
+              var xmlhttp = new XMLHttpRequest();
+              var url = "{% static 'json/subredditData.json' %}";
+              var freqs = [];
+              var subreddits = [];
+              xmlhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+                   var myArr = JSON.parse(this.responseText);
+                   myFunction(myArr);
+               }
+              };
+              xmlhttp.open("GET", url, true);
+              xmlhttp.send();
+              function myFunction(arr) {
+               var i;
+               for(i = 0; i < arr.length; i++) {
+                   subreddits.push(arr[i].subreddit);
+                   freqs.push(arr[i].frequency);
+               }
+              }
+
+              window.onload = function () {
+              var chart = new CanvasJS.Chart("chartContainer", {
+              animationEnabled: true,
+
+              title:{
+               text:"Number of Submissions per Subreddit"
+              },
+              exportEnabled: true,
+              axisX:{
+               interval: 1
+              },
+              axisY2:{
+               interlacedColor: "rgba(1,77,101,.2)",
+               gridColor: "rgba(1,77,101,.1)",
+               title: "Number of Submissions"
+              },
+              data: [{
+               type: "bar",
+               name: "companies",
+               axisYType: "secondary",
+               color: "#014D65",
+               dataPoints: [
+                 { y: freqs[0], label: subreddits[0] },
+                 { y: freqs[1], label: subreddits[1] }
+               ]
+              }]
+              });
+              chart.render();
+              };
+    </script>
+
+    <div id="chartContainer" style="height: 800px; width: 600px;"></div>
+    </div>
+
+    <div class="col-md-6 grid datavis" id="showData">
+       <table id="newsapi-table">
+
+      </table>
+      <script>
+          $(document).ready(function () {
+            $.getJSON("{% static 'json/newsdata.json' %}",function(data){
+              var newsapi_data = '';
+              for( var i = 0; i < data.articles.length; i++) {
+                newsapi_data += "<tr>";
+                newsapi_data += '<td><img src=' + data.articles[i].urlToImage + ' class = "newsicons pull-left" ></img>';
+                newsapi_data += '<a href="' + data.articles[i].url + '" target="_blank">' + data.articles[i].title + '</a>';
+                newsapi_data +=  "<br>" + data.articles[i].author +"</td>";
+                newsapi_data += "</tr>";
+              }
+              $('#newsapi-table').append(newsapi_data);
+            });
+          });
+      </script>
+    </div>
+  </div>
+ </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <!-- <script src="js/bootstrap.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+{% endblock %}
