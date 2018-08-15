@@ -38,12 +38,16 @@
      <div class="col-md-6 grid">
        <div id='cloud-container'></div>
 
+           <div>
+           <button class="button" id='saveButton'>Export my D3 visualization to png</button>
+         </div>
           <script src="{% static 'js/wordcloud.js' %}"></script>
             <script>
               WordCloud({
                 container: '#cloud-container',
                 data: "{% static 'json/twitterLCData.json' %}"
               });
+              SaveButton();
           </script>
     </div>
 

@@ -23,6 +23,7 @@ urlpatterns = [
     path('', index ),
     url(r'^index/$', views.index, name='index'),
     url(r'^t_linegraph/$', views.t_linegraph, name='t_linegraph'),
+    url(r'^r_linegraph/$', views.r_linegraph, name='r_linegraph'),
     url(r'^t_piechart/$', views.piechart, name='piechart'),
     url(r'^t_bargraph/$', views.bargraph, name='bargraph'),
     url(r'^wordcloud/$', views.wordcloud, name='wordcloud'),

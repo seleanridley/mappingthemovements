@@ -17,8 +17,6 @@
         <option >Change Visualization</option>
         <option value="{% url 't_linegraph' %}">Line Graph</option>
         <option value="{% url 'locationcloud' %}">Location Cloud</option>
-        <option value="{% url 'piechart' %}">Pie Chart</option>
-        <option value="{% url 'bargraph' %}">Bar Graph</option>
     </select>
 </div>
 <script>
@@ -40,14 +38,15 @@
   <!-- grid -->
     <div class="row">
      <div class="col-md-6 grid">
-       <div id='cloud-container'></div>
-
+       <div id='cloud-container' style="padding-right= 20px;"></div>
+       <button class="button" id='saveButton'>Export my D3 visualization to png</button>
           <script src="{% static 'js/wordcloud.js' %}"></script>
             <script>
               WordCloud({
                 container: '#cloud-container',
                 data: "{% static 'json/twitterWCData.json' %}"
               });
+              SaveButton();
           </script>
     </div>
 

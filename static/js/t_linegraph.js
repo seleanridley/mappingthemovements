@@ -2,52 +2,82 @@ var svg;
 var w;
 var h;
 
-function PieChart(options) {
-  svg = d3.select("svg"),
-      width = +svg.attr("width"),
-      height = +svg.attr("height"),
-      radius = Math.min(width, height) / 2,
-      g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
+function LineGraph(options) {
+  // set the dimensions and margins of the graph
+  var margin = {top: 20, right: 20, bottom: 30, left: 50},
+      width = 800 - margin.left - margin.right,
+      height = 500 - margin.top - margin.bottom;
 
-  w = +svg.attr("width");
-  h = +svg.attr("height");
+  w = width;
+  h = height;
 
-  var color = d3.scaleOrdinal(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
+  // parse the date / time
+  var parseTime = d3.timeParse("%a %b %d %H:%M:%S %Z %Y");
 
-  var pie = d3.pie()
-  .sort(null)
-  .value(function(d) { return d.frequency; });
+  // set the ranges
+  var x = d3.scaleTime().range([0, width]);
+  var y = d3.scaleLinear().range([height, 0]);
 
-  var path = d3.arc()
-  .outerRadius(radius - 10)
-  .innerRadius(0);
+  // define the line
+  var valueline = d3.line()
+  .x(function(d) { return x(d["date"]); })
+  .y(function(d) { return y(d["engagement"]); });
 
-  var label = d3.arc()
-  .outerRadius(radius - 40)
-  .innerRadius(radius - 40);
+  // append the svg obgect to the body of the page
+  // appends a 'group' element to 'svg'
+  // moves the 'group' element to the top left margin
+  svg = d3.select("body").append("svg")
+  .attr("width", width + margin.left + margin.right)
+  .attr("height", height + margin.top + margin.bottom)
+  .append("g")
+  .attr("transform",
+      "translate(" + margin.left + "," + margin.top + ")");
 
-  d3.json(options.data, function(data) {
 
+  // Get the data
+  d3.json(options.data, function(error, data) {
+    if (error) throw error;
+
+    // trigger render
+    draw(data, "results");
+  });
+
+  function draw(data, country) {
+
+    var data = data[country];
+
+    // format the data
     data.forEach(function(d) {
-      d.subreddit = d.subreddit;
-      d.frequency = +d.frequency;
+      d["date"] = parseTime(d["date"]);
+      d.engagement = +d.engagement;
     });
 
+    // sort years ascending
+    data.sort(function(a, b){
+      return a["date"]-b["date"];
+    });
 
-    var arc = g.selectAll(".arc")
-    .data(pie(data))
-    .enter().append("g")
-    .attr("class", "arc");
+    // Scale the range of the data
+    x.domain(d3.extent(data, function(d) { return d["date"]; }));
+    y.domain([0, d3.max(data, function(d) {
+      return d["engagement"]; })]);
 
-    arc.append("path")
-    .attr("d", path)
-    .attr("fill", function(d) { return color(d.data.subreddit); });
+    // Add the valueline path.
+    svg.append("path")
+    .data([data])
+    .attr("class", "line")
+    .attr("d", valueline);
 
-    arc.append("text")
-    .attr("transform", function(d) { return "translate(" + label.centroid(d) + ")"; })
-    .attr("dy", "0.35em")
-    .text(function(d) { return d.data.subreddit; });
-  });
+    // Add the X Axis
+    svg.append("g")
+    .attr("transform", "translate(0," + height + ")")
+    .attr("fill", "white")
+    .call(d3.axisBottom(x));
+
+    // Add the Y Axis
+    svg.append("g")
+    .call(d3.axisLeft(y));
+  }
 }
 
 function SaveButton(options) {
@@ -57,9 +87,10 @@ function SaveButton(options) {
     console.log(svgString);
     svgString2Image( svgString, 2*w, 2*h, 'png', save ); // passes Blob and filesize String to the callback
     function save( dataBlob, filesize ){
-      saveAs( dataBlob, 'piechart.png' ); // FileSaver.js function
+      saveAs( dataBlob, 'twitter_linegraph.png' ); // FileSaver.js function
     }
   });
+
 
     // Below are the functions that handle actual exporting:
     // getSVGString ( svgNode ) and svgString2Image( svgString, width, height, format, callback )

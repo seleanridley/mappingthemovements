@@ -17,7 +17,10 @@ def index(request):
             search = Controller.SearchParam(start_date, end_date, user_keyword, twitter, reddit)
             search.runSearch()
 
-            return redirect('wordcloud')
+            if twitter and not reddit:
+                return redirect('wordcloud')
+            if reddit and not twitter:
+                return redirect('piechart')
             #pass
         #else:
             #print(form['keyword'].value())
@@ -39,3 +42,6 @@ def piechart(request):
 
 def bargraph(request):
     return render(request, "barchart.html")
+
+def r_linegraph(request):
+    return render(request, "r_linegraph.html")

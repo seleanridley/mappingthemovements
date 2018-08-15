@@ -3,9 +3,8 @@
 
 {% block content %}
 <body>
-
   <!--navigation-->
-<div class="container-fluid">
+<div class="container">
   <nav class="navbar justify-content-between">
     <div class="navbar-header pull-left">
       <a href="{% url 'index' %}">
@@ -13,13 +12,15 @@
       </a>
     </div>
 
+<!-- Visualization Selection -->
     <div id="selector" class="menubar">
     <select class="form-control options fa fa-search fa-fw pull-right" style="width:90%">
-        <option >Change Visualization</option>
+        <option>Change Visualization</option>
         <option value="{% url 'bargraph' %}">Bar Graph</option>
-        <option value="{% url 'r_linegraph' %}">Line Graph</option>
+        <option value="{% url 'piechart' %}">Pie Chart</option>
     </select>
 </div>
+
 <script>
     $(function(){
         // bind change event to select
@@ -34,26 +35,19 @@
  </script>
   </nav>
 <!-- End Navigation -->
-
-
-  <!-- grid -->
     <div class="row">
      <div class="col-md-6 grid">
-       <div id='cloud-container'></div>
-
-       <svg width="400" height="500"></svg>
-       <div>
-       <button class="button" id='saveButton'>Export my D3 visualization to png</button>
-     </div>
-      <script src="{% static 'js/piechart.js' %}"></script>
-      <script>
-        PieChart({
-          container: '#cloud-container',
-          data: "{% static 'json/subredditData.json' %}"
-        });
-        SaveButton();
-      </script>
-
+     <div class="pull-left" id='cloud-container'></div>
+     <svg width="400" height="500"></svg>
+     <button class="button" id='saveButton'>Export my D3 visualization to png</button>
+          <script src="{% static 'js/r_linegraph.js' %}"></script>
+          <script>
+            LineGraph({
+              container: '#cloud-container',
+              data: "{% static 'json/redditData.json' %}"
+            });
+            SaveButton();
+          </script>
     </div>
 
     <div class="col-md-6 grid datavis" id="showData">
@@ -75,10 +69,8 @@
             });
           });
       </script>
-    </th>
-  </tr>
     </div>
-     </div>
+  </div>
  </div>
 
   <!-- Bootstrap core JavaScript
@@ -92,50 +84,3 @@
 
   </body>
 {% endblock %}
-
-
-
-
-
-
-
-
-
-
-
-<svg width="960" height="500"></svg>
-<script src="https://d3js.org/d3.v4.min.js"></script>
-<script>
-var svg = d3.select("svg"),
-    width = +svg.attr("width"),
-    height = +svg.attr("height"),
-    radius = Math.min(width, height) / 2,
-    g = svg.append("g").attr("transform", "translate(" + width / 2 + "," + height / 2 + ")");
-var color = d3.scaleOrdinal(["#98abc5", "#8a89a6", "#7b6888", "#6b486b", "#a05d56", "#d0743c", "#ff8c00"]);
-var pie = d3.pie()
-    .sort(null)
-    .value(function(d) { return d.frequency; });
-var path = d3.arc()
-    .outerRadius(radius - 10)
-    .innerRadius(0);
-var label = d3.arc()
-    .outerRadius(radius - 40)
-    .innerRadius(radius - 40);
-d3.json("subredditData.json", function(data) {
-    data.forEach(function(d) {
-        d.subreddit = d.subreddit;
-        d.frequency = +d.frequency;
-    });
-  var arc = g.selectAll(".arc")
-    .data(pie(data))
-    .enter().append("g")
-      .attr("class", "arc");
-  arc.append("path")
-      .attr("d", path)
-      .attr("fill", function(d) { return color(d.data.subreddit); });
-  arc.append("text")
-      .attr("transform", function(d) { return "translate(" + label.centroid(d) + ")"; })
-      .attr("dy", "0.35em")
-      .text(function(d) { return d.data.subreddit; });
-});
-</script>

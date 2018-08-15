@@ -31,3 +31,43 @@ svg text{
   .arc path {
     stroke: #fff;
   }
+
+  .label-background-strong {
+    fill: white;
+    fill-opacity: .8;
+  }
+
+  #wolfstar-container {
+    cursor: default;
+  }
+
+  svg text{
+    font-family: Helvetica, sans-serif;
+    font-size: 14px;
+  }
+
+  .line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+  }
+
+  path.domain {
+    stroke: white;
+  }
+
+  .tick text {
+    fill: white;
+  }
+
+  .axisBlue line {
+    stroke: steelblue;
+  }
+
+  .axisBlue path {
+    stroke: steelblue;
+  }
+
+  .axisBlue text {
+    fill: steelblue;
+  }

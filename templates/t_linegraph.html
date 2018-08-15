@@ -4,7 +4,7 @@
 {% block content %}
 <body>
   <!--navigation-->
-<div class="container-fluid">
+<div class="container">
   <nav class="navbar justify-content-between">
     <div class="navbar-header pull-left">
       <a href="{% url 'index' %}">
@@ -38,12 +38,14 @@
     <div class="row">
      <div class="col-md-6 grid">
      <div class="pull-left" id='cloud-container'></div>
-          <script src="{% static 'js/linegraph.js' %}"></script>
+     <button class="button" id='saveButton'>Export my D3 visualization to png</button>
+          <script src="{% static 'js/t_linegraph.js' %}"></script>
           <script>
             LineGraph({
               container: '#cloud-container',
               data: "{% static 'json/twitterEGData.json' %}"
             });
+            SaveButton();
           </script>
     </div>
 
