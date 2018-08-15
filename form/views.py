@@ -19,10 +19,11 @@ def index(request):
 
             return redirect('wordcloud')
             #pass
-        else:
-            print(form['keyword'].value())
-            form = UserForm()
-    return render(request, "index.html", {'form': form})
+        #else:
+            #print(form['keyword'].value())
+            #print(form.errors)
+            #form = UserForm()
+    return render(request, "index.html", {'form': form, 'errors': form.errors})
 
 def t_linegraph(request):
     return render(request, "t_linegraph.html")
