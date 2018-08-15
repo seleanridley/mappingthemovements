@@ -1,0 +1,89 @@
+{% extends "base.html" %}
+{% load staticfiles %}
+
+{% block content %}
+<body>
+
+  <!--navigation-->
+  <div class="container">
+    <nav class="navbar justify-content-between">
+      <div class="navbar-header pull-left">
+        <img src="images/logo.jpg" width="120px" height="100px">
+      </div>
+      <form class="form-inline pull-left">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search Keyword..." aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+<!--
+      <div class="btn-group pull-left">
+        <button type="button" class="btn btn-secondary dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Right-aligned menu
+        </button>
+        <div class="dropdown-menu dropdown-menu-right">
+          <button class="dropdown-item" type="button">Action</button>
+          <button class="dropdown-item" type="button">Another action</button>
+          <button class="dropdown-item" type="button">Something else here</button>
+        </div>
+      </div> -->
+
+<div class="wrapper">
+          <div class='input-group date pull-left' id='datetimepicker'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+          </div>
+          <div class='input-group date pull-left' id='datetimepicker2'>
+              <input type='text' class="form-control" />
+              <span class="input-group-addon">
+                  <span class="glyphicon glyphicon-calendar"></span>
+              </span>
+          </div>
+          <script type="text/javascript">
+              $(function () {
+                  $('#datetimepicker').datepicker();
+                  $('#datetimepicker2').datepicker();
+              });
+          </script>
+    </nav>
+</div>
+  <!--end navigation-->
+  <div class="container" id="home">
+   <div class="row">
+     <div class="col-md-6 grid"> </div>
+     <div class="col-md-6 grid" id="showData">
+       <table id="newsapi-table">
+
+      </table>
+      <script>
+          $(document).ready(function () {
+            $.getJSON("{% static 'json/newsdata.json' %}",function(data){
+              var newsapi_data = '';
+              for( var i = 0; i < data.articles.length; i++) {
+                newsapi_data += "<tr>";
+                newsapi_data += '<td><img src= "{% static ' + data.articles[i].urlToImage + '%}" class = "newsicons pull-left" ></img>';
+                newsapi_data += '<a href="' + data.articles[i].url + '" target="_blank">' + data.articles[i].title + '</a>';
+                newsapi_data +=  "<br>" + data.articles[i].author +"</td>";
+                newsapi_data += "</tr>";
+              }
+              $('#newsapi-table').append(newsapi_data);
+            });
+          });
+      </script>
+     </div>
+
+  </div>
+ </div>
+ </div>
+
+  <!-- Bootstrap core JavaScript
+  ================================================== -->
+  <!-- Placed at the end of the document so the pages load faster -->
+  <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+   <!-- <script src="js/bootstrap.js"></script> -->
+  <!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+  <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script>
+
+  </body>
+{% endblock %}

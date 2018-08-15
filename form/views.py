@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 from django.shortcuts import render, redirect
+=======
+from django.shortcuts import render
+from django.http import HttpResponseRedirect
+>>>>>>> master
 from .form import UserForm
 from . import Controller
 
@@ -7,7 +12,6 @@ def index(request):
     form = UserForm(request.POST or None)
     if request.method == 'POST':
         if form.is_valid():
-
             user_keyword = form['keyword'].value()
             start_date = form['startdate'].value()
             end_date = form['enddate'].value()

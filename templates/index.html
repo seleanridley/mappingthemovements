@@ -25,13 +25,13 @@
 
     <div class="jumbotron">
      <!-- Search form -->
-     <form method="post" novalidate>
+     <form method="post"  action='/datavis.html' novalidate>
        {% csrf_token %}
        {{ form.source }}
            <div class="input-group">
                {% render_field form.keyword class+="form-control" style+="color: white" placeholder='Enter Keyword...' %}
              <span class = "input-group-btn">
-               <button class="btn btn-search" type="submit"  style="color: white" target='_blank'><i class="fa fa-search fa-fw"></i> Search</button>
+               <button class="btn btn-search" type="submit" style= "color: white" target='_blank'><i class="fa fa-search fa-fw"></i> Search</button>
              </span>
           </div>
 
