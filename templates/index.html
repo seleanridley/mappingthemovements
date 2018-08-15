@@ -13,7 +13,6 @@
     </div> -->
 
     <img src= "{% static 'images/logo.jpg' %}" class="center rounded" alt="Responsive image"/>
-	<p style="color:white"> 
 	{{ form.non_field_errors }} 
 	{% if form.errors %} 
 		{{ form.errors|pluralize }} 
@@ -22,7 +21,6 @@
         {{ field.error }} 
         {{ field.field.error }} 
 	{% endfor %} 
-	</p>
 
     <div class="jumbotron">
      <!-- Search form -->
