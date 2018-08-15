@@ -23,7 +23,7 @@ class TwitterAPI():
 		##date_end_str = self.date_to_string(date_end)
 		for status in twitter.search.tweets(q=keyword, until=date_end, since=date_start, result_type='popular', count=100)['statuses']:
 			self.results['user'].append(status['user']['screen_name'])
-			print('Please be here')
+			#print('Please be here')
 			self.results['date'].append(status['created_at'])
 			self.results['text'].append(status['text'])
 			self.results['favorite_count'].append(status['favorite_count'])
