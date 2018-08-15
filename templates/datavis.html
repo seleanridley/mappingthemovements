@@ -3,11 +3,40 @@
 
 {% block content %}
 <body>
+  <!--navigation-->
+<div class="container-fluid">
+  <nav class="navbar justify-content-between">
+    <div class="navbar-header pull-left">
+      <a href="{% url 'index' %}">
+        <img src="{% static 'images/logo.jpg' %}"  width="100px" height="80px">
+      </a>
+    </div>
+
+    <div id="selector" class="menubar">
+    <select class="form-control options fa fa-search fa-fw pull-right" style="width:90%">
+        <option value="{% url 'datavis' %}">Line Graph</option>
+        <option value="{% url 'locationcloud' %}">Location Cloud</option>
+    </select>
+</div>
+<script>
+    $(function(){
+        // bind change event to select
+        $('#selector select').bind('change', function () {
+            var url = $(this).val(); // get selected value
+            if (url) { // require a URL
+                window.location = url; // redirect
+            }
+            return false;
+         });
+     });
+ </script>
+  </nav>
+<!-- End Navigation -->
 
   <div class="container-fluid" id="home">
     <div class="row">
      <div class="col-md-6 grid">
-
+       <div class="span6">
        <script>
           // set the dimensions and margins of the graph
           var margin = {top: 20, right: 20, bottom: 30, left: 50},
@@ -84,11 +113,14 @@
 
             // trigger render
             draw(data, "submissions");
+
           });
 </script>
+</div>
     </div>
 
-    <div class="col-md-6 grid datavis" id="showData">
+    <div class="col datavis" id="showData">
+      <div class="span3">
        <table id="newsapi-table">
 
       </table>
@@ -107,8 +139,7 @@
             });
           });
       </script>
-    </th>
-  </tr>
+    </div>
     </div>
      </div>
  </div>

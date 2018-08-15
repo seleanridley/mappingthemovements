@@ -8,7 +8,7 @@ import json
 #from . import APICall
 
 class RedditAPI():
-	
+
 	def __init__(self):
 		self.reddit = praw.Reddit(user_agent = 'userAgent', client_id = 'Wtyt6ZzLdbI6NA', client_secret = '3BxHtc7XdjL28i-xRS_NQPMV_P4')
 		self.subData = {}
@@ -35,7 +35,7 @@ class RedditAPI():
 					'score': int(submission.score),
 					'comments': int(submission.num_comments),
 					'date created': str(self.get_date(submission))
-				})            
+				})
 
 	def search_today(self, keyword):
 		for submission in reddit.subreddit('politics+worldnews').top(time_filter = 'day', limit = None):
@@ -46,12 +46,12 @@ class RedditAPI():
 					'score': int(submission.score),
 					'comments': int(submission.num_comments),
 					'time created': str(self.get_datetime(submission).time())
-				})                 
+				})
 
 	def parse_results(self):
 		print(self.subData)
-		##with open('../json/redditData.json', 'w') as outfile:
-			##json.dump(self.subData, outfile, indent=4)
+		with open('static/json/redditData.json', 'w') as outfile:
+			json.dump(self.subData, outfile, indent=4)
 
 '''
 search = SearchParam()

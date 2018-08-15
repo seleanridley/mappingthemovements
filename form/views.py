@@ -16,9 +16,8 @@ def index(request):
 
             search = Controller.SearchParam(start_date, end_date, user_keyword, twitter, reddit)
             search.runSearch()
-            #print(form.cleaned_data['keyword'])
 
-            return redirect('datavis')
+            return redirect('wordcloud')
             #pass
         else:
             print(form['keyword'].value())
@@ -30,3 +29,6 @@ def datavis(request):
 
 def wordcloud(request):
     return render(request, "wordcloud.html")
+
+def locationcloud(request):
+    return render(request, "locationcloud.html")

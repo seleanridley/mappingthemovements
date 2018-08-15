@@ -1,246 +1,246 @@
 {
-    "status": "ok",
-    "totalResults": 73050,
+    "totalResults": 2300,
     "articles": [
         {
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "author": "EMILY COCHRANE",
-            "title": "Trump Says Republican Memo \u2018Totally Vindicates\u2019 Him",
-            "description": "President Trump at Joint Base Andrews on Friday. Mr. Trump is accusing top officials of violating what they consider their highest duty: to fairly pursue justice.",
-            "url": "https://www.nytimes.com/2018/02/03/us/politics/trump-memo-vindicates.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/02/04/us/04dc-memo/04dc-trump-facebookJumbo.jpg",
-            "publishedAt": "2018-02-03T16:11:41Z"
-        },
-        {
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "author": "The New York Times",
-            "title": "The Candidate Who\u2019s Too Trump-Like Even for Trump",
-            "description": "Republicans in Washington, including President Trump, are encouraging West Virginians not to vote for Don Blankenship, a popular Senate candidate with a complicated past.",
-            "url": "https://www.nytimes.com/video/us/politics/100000005887119/trump-blankenship-west-virginia.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/05/08/us/08BLANKENSHIP-print/08BLANKENSHIP-slide-BJ93-videoSixteenByNine1050.jpg",
-            "publishedAt": "2018-05-07T23:47:09Z"
-        },
-        {
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
             "author": "SHARON LaFRANIERE",
+            "source": {
+                "id": "the-new-york-times",
+                "name": "The New York Times"
+            },
             "title": "Top Trump Campaign Aides Are Portrayed as Corrupt at Manafort Trial",
-            "description": "Rick Gates, a top campaign aide to President Trump, detailed in federal court on Tuesday a multiyear fraud by the former Trump campaign chairman Paul Manafort. The defense took aim at Mr. Gates\u2019s credibility.",
-            "url": "https://www.nytimes.com/2018/08/07/us/politics/manafort-trial-gates-testify.html",
             "urlToImage": "https://static01.nyt.com/images/2018/08/08/us/08dc-manafort-print/08dc-manafort-print-facebookJumbo-v2.jpg",
+            "url": "https://www.nytimes.com/2018/08/07/us/politics/manafort-trial-gates-testify.html",
+            "description": "Rick Gates, a top campaign aide to President Trump, detailed in federal court on Tuesday a multiyear fraud by the former Trump campaign chairman Paul Manafort. The defense took aim at Mr. Gates\u2019s credibility.",
             "publishedAt": "2018-08-07T23:04:41Z"
         },
         {
+            "author": "MAGGIE HABERMAN",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "MATTHEW HAAG and JACEY FORTIN",
-            "title": "Vanessa Trump Files for Divorce From Donald Trump Jr.",
-            "description": "The president\u2019s daughter-in-law filed for an uncontested divorce in Manhattan Supreme Court on Thursday.",
-            "url": "https://www.nytimes.com/2018/03/15/us/trump-jr-divorce-vanessa.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/03/16/us/politics/16xp-divorce-1-sub/16xp-divorce-1-sub-facebookJumbo.jpg",
-            "publishedAt": "2018-03-16T00:31:48Z"
+            "title": "Trump Escalates Attack on Sessions, Calling Him \u2018Scared Stiff\u2019",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/12/us/12dc-Sessions/merlin_142231509_0b385816-46fb-4240-9b17-9418b6bdefb1-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/11/us/politics/trump-sessions-russia.html",
+            "description": "President Trump hosting members of the New Jersey chapter of Bikers for Trump at his golf club in Bedminster. Motorcyclists in the United States tend to cover a demographic that includes a bulk of the president\u2019s base, predominantly working-class men over 50 \u2026",
+            "publishedAt": "2018-08-11T22:26:25Z"
         },
         {
+            "author": "ANNIE CORREAL and EMILY COCHRANE",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "KATHERINE ROSMAN and JACOB BERNSTEIN",
-            "title": "Unbecoming a Trump",
-            "description": "From left, Donald Trump, Melania Knauss, Vanessa Haydon and Donald Trump Jr. at a charity event in 2004.",
-            "url": "https://www.nytimes.com/2018/03/22/style/vanessa-trump-divorce.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/03/21/fashion/21VANESSA-1/21VANESSA-1-facebookJumbo-v2.jpg",
-            "publishedAt": "2018-03-22T21:55:44Z"
+            "title": "Melania Trump\u2019s Parents Become U.S. Citizens as Lawyer Acknowledges \u2018Chain Migration\u2019",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/10/nyregion/10melaniaparents-alpha/10melaniaparents-alpha-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/09/nyregion/melania-trumps-parents-become-us-citizens.html",
+            "description": "Viktor and Amalija Knavs had a private naturalization ceremony in Lower Manhattan, after being sponsored by their daughter in a program President Trump has railed against.",
+            "publishedAt": "2018-08-09T20:24:26Z"
         },
         {
+            "author": "GIOVANNI RUSSONELLO",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "JEREMY W. PETERS",
-            "title": "Charles Koch Takes on Trump. Trump Takes on Charles Koch.",
-            "description": "Americans for Prosperity said the group would not be supporting the Republican candidate for Senate in North Dakota, Representative Kevin Cramer, who is trying to unseat a Democratic incumbent in one of the year\u2019s most competitive races.",
-            "url": "https://www.nytimes.com/2018/07/31/us/politics/trump-koch-brothers.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/01/us/politics/01kochs1/01kochs1-facebookJumbo.jpg",
-            "publishedAt": "2018-07-31T22:49:49Z"
+            "title": "Best of Late Night: Colbert Isn\u2019t Surprised by Anything Omarosa Manigault Newman Says",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/14/arts/14latenight1/14latenight1-facebookJumbo.png",
+            "url": "https://www.nytimes.com/2018/08/14/arts/television/stephen-colbert-omarosa-manigault-newman.html",
+            "description": "\u201cFinally, we have proof that the guy who refused to rent to black tenants\u201d is a racist, Stephen Colbert said, referring sarcastically to President Trump.",
+            "publishedAt": "2018-08-14T10:34:20Z"
         },
         {
+            "author": "CHRISTOPHER BUSKIRK",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "CHARLES M. BLOW",
-            "title": "Op-Ed Columnist: \u2018Sort of a Double Negative\u2019",
-            "description": "President Trump at his press conference with Vladimir Putin on Monday. Mr. Trump later backpedaled on some of his remarks.",
-            "url": "https://www.nytimes.com/2018/07/18/opinion/trump-putin-double-negative.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/07/18/opinion/18blowWeb/18blowWeb-facebookJumbo.jpg",
-            "publishedAt": "2018-07-18T23:16:24Z"
+            "title": "Let\u2019s Not Throw the Word Treason Around",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/07/opinion/07Buskirk1/07Buskirk1-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/08/opinion/trump-treason-democrats-merkley-hoyer.html",
+            "description": "President Trump received a warm welcome on Saturday when he arrived for a rally at Olentangy Orange High School in Lewis Center, Ohio.",
+            "publishedAt": "2018-08-08T09:45:03Z"
         },
         {
+            "author": "THOMAS L. FRIEDMAN",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "JO BECKER, MARK MAZZETTI, MATT APUZZO and MAGGIE HABERMAN",
-            "title": "Mueller Zooms In on Trump Tower Cover Story",
-            "description": "After President Trump and the first lady, Melania Trump, left Hamburg, Germany, on July 8, he helped draft a news release that has drawn the interest of the special counsel, according to people familiar with the episode.",
-            "url": "https://www.nytimes.com/2018/01/31/us/politics/trump-russia-hope-hicks-mueller.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/02/01/us/politics/01dc-investigate1/01dc-investigate1-facebookJumbo.jpg",
-            "publishedAt": "2018-02-01T01:56:37Z"
+            "title": "What if Mother Nature Is on the Ballot in 2020?",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/14/opinion/14friedman/14friedman-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/14/opinion/2020-election-climate-change-trump.html",
+            "description": "Democrats could have a strong issue to run on if the extreme weather persists and President Trump continues to dismiss climate change.",
+            "publishedAt": "2018-08-14T23:15:32Z"
         },
         {
+            "author": "NOAH WEILAND",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "PETER BAKER",
-            "title": "White House Memo: \u2018Bigger Than Watergate\u2019? Both Sides Say Yes, but for Different Reasons",
-            "description": "Forty-four years after Richard Nixon resigned, critics of President Trump see an even worse scandal. Mr. Trump says the real outrage is the investigation.",
-            "url": "https://www.nytimes.com/2018/05/17/us/politics/watergate-trump-russia-inquiry.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/05/16/us/politics/18DC-ASSESS-01/16DC-FASTFACT-01-facebookJumbo.jpg",
-            "publishedAt": "2018-05-18T00:45:49Z"
+            "title": "Before White Supremacists\u2019 Rally, Trump Declines to Condemn Them Specifically",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/12/us/12dc-protest-p1/merlin_139933959_65abb0cd-4490-45f5-a0fb-817ccb502649-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/11/us/politics/unite-the-right-2018-dc-rally.html",
+            "description": "White nationalists clashing with counterdemonstrators in Charlottesville, Va., last year. With an anniversary rally planned in Washington on Sunday, the authorities have planned for weeks to avoid a repeat of last year\u2019s clashes.",
+            "publishedAt": "2018-08-11T19:19:08Z"
         },
         {
+            "author": "JOUMANA KHATIB and MARCUS PAYADUE",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "TRIP GABRIEL",
-            "title": "Victories by Women Buoy Hopes of Democratic Gains in Pennsylvania",
-            "description": "Seeking to tap into grass-roots rejection of President Trump, Democrats want to reclaim House seats in a state Mr. Trump narrowly won in 2016",
-            "url": "https://www.nytimes.com/2018/05/15/us/politics/pennsylvania-primaries.html",
-            "urlToImage": "https://static01.nyt.com/images/icons/t_logo_291_black.png",
-            "publishedAt": "2018-05-16T02:20:37Z"
+            "title": "Space Force, Trump, Yemen: Your Thursday Evening Briefing",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/09/briefing/09pmBriefing-US-core-trypt/09pmBriefing-US-core-trypt-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/09/briefing/space-force-trump-yemen.html",
+            "description": "Here\u2019s what you need to know at the end of the day.",
+            "publishedAt": "2018-08-09T22:02:51Z"
         },
         {
+            "author": "ALAN FEUER",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "MICHAEL S. SCHMIDT and MAGGIE HABERMAN",
-            "title": "Trump\u2019s Lawyers Want Him to Refuse an Interview in Russia Inquiry",
-            "description": "John Dowd, the longtime Washington lawyer hired last summer to represent President Trump in the Russia investigation, wants Mr. Trump to rebuff an interview request from the special counsel.",
-            "url": "https://www.nytimes.com/2018/02/05/us/politics/trump-lawyers-special-counsel-interview.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/02/06/us/politics/06dc-mueller1/06dc-mueller1-facebookJumbo.jpg",
-            "publishedAt": "2018-02-06T00:59:37Z"
+            "title": "Roger Stone Associate Is Subpoenaed in Russia Investigation",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/11/us/politics/11dc-stone/11dc-stone-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/10/us/politics/roger-stone-russia-investigation.html",
+            "description": "Randy Credico, a New York radio personality, has been identified as the intermediary between Roger J. Stone Jr., a veteran adviser to President Trump, and Julian Assange, the founder of WikiLeaks.",
+            "publishedAt": "2018-08-10T18:15:19Z"
         },
         {
+            "author": "CHARLIE SAVAGE",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "EMILY BAUMGAERTNER",
-            "title": "Here\u2019s Who Will Sit With the First Lady at the State of the Union",
-            "description": "President Trump and Melania Trump, the first lady, have released their joint guest list for the State of the Union address on Tuesday night.",
-            "url": "https://www.nytimes.com/2018/01/30/us/politics/guests-first-lady-sotu.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/01/30/us/politics/30dc-guests3/30dc-guests3-facebookJumbo.jpg",
-            "publishedAt": "2018-01-30T10:00:22Z"
+            "title": "Trump Claims Power to Bypass Limits Set by Congress in Defense Bill",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/15/us/politics/15dc-signing/15dc-signing-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/14/us/politics/trump-signing-statements.html",
+            "description": "In the latest example of his broad vision of executive power, President Trump used a signing statement to challenge dozens of provisions, including limits on Russia and North Korea.",
+            "publishedAt": "2018-08-14T20:46:41Z"
         },
         {
+            "author": "KALY SOTO",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "KATIE ROGERS",
-            "title": "Melania Trump\u2019s Task in Europe? Show Another Side of the White House",
-            "description": "The first lady, Melania Trump, will accompany her husband on a trip to Europe, a high-profile re-entry into the spotlight for Mrs. Trump.",
-            "url": "https://www.nytimes.com/2018/07/09/us/politics/melania-trump-europe-trip.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/07/10/us/politics/10dc-melania/10dc-melania-facebookJumbo.jpg",
-            "publishedAt": "2018-07-10T00:16:01Z"
+            "title": "11 of Our Best Weekend Reads",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/11/autossell/11weekend-reads-promo-trypt/merlin_142206867_9de1881c-fd14-485c-b478-a0fc85250412-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/11/arts/11-of-our-best-weekend-reads.html",
+            "description": "Don\u2019t ask Paul Ryan about President Trump anymore. How two cyclists lost their lives in Tajikistan. We\u2019re not prepared for global warming. Why the songs of summer sound the same. And more.",
+            "publishedAt": "2018-08-11T09:00:02Z"
         },
         {
+            "author": "GIOVANNI RUSSONELLO",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "MARK MAZZETTI",
-            "title": "How Trump Allies Shifted Their Defense as Evidence of Contacts With Russians Grew",
-            "description": "Rudolph W. Giuliani, a lawyer for President Trump, said in interviews on Monday that even if President Trump colluded with the Russians, he committed no crime.",
-            "url": "https://www.nytimes.com/2018/07/30/us/politics/rudy-giuliani-collusion-trump.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/07/31/us/31DC-COLLUSION-print/31DC-COLLUSION-01-facebookJumbo.jpg",
-            "publishedAt": "2018-07-31T00:40:50Z"
+            "title": "Best of Late Night: Kimmel Hammers Trump for Changing His Story on 2016 Meeting",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/07/arts/07latenight1/07latenight1-facebookJumbo.png",
+            "url": "https://www.nytimes.com/2018/08/07/arts/television/jimmy-kimmel-trump-jr-tweet-information-opponent.html",
+            "description": "Jimmy Kimmel took aim at the president for tweeting that Donald Trump Jr. met with Russian officials before the election \u201cto get information on an opponent.\u201d",
+            "publishedAt": "2018-08-07T08:56:08Z"
         },
         {
+            "author": "MONICA DAVEY",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "CHARLES M. BLOW",
-            "title": "Trump, Treasonous Traitor",
-            "description": "President Donald Trump meets with President Vladimir Putin of Russia at the G-20 Summit, in Hamburg, Germany, in July 2017.",
-            "url": "https://www.nytimes.com/2018/07/15/opinion/trump-russia-investigation-putin.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/07/15/opinion/15blow/merlin_141295227_4a3dc327-df42-41b8-9ad4-79614740ba3d-facebookJumbo.jpg",
-            "publishedAt": "2018-07-15T23:08:59Z"
+            "title": "Wisconsin Faces a Political Crossroads Tuesday. Which Way Will It Go?",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/12/us/12WISCONSIN-lede/12WISCONSIN-lede-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/12/us/politics/wisconsin-scott-walker-election.html",
+            "description": "Wisconsin has been in the throes of a political identity crisis for years, one exacerbated by Donald J. Trump\u2019s surprise win in the state in 2016. From cities to rural areas like Reedsburg, the state faces a defining moment in the 2018 midterm elections, star\u2026",
+            "publishedAt": "2018-08-12T09:00:09Z"
         },
         {
+            "author": "MICHELLE GOLDBERG",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "THE EDITORIAL BOARD",
-            "title": "North Korea, Trump-Style",
-            "description": "The meeting was classic Trump: enormous hype, ulcer-inducing suspense, oceans of self-congratulation, ending with grandiose, fuzzy promises.",
-            "url": "https://www.nytimes.com/2018/06/12/opinion/north-korea-trump-singapore-style.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/06/13/opinion/13wed2web/13wed2web-facebookJumbo.jpg",
-            "publishedAt": "2018-06-12T20:54:20Z"
+            "title": "Welcome to the Resistance, Omarosa",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/13/opinion/13goldberg-01/merlin_142300929_fbf62a5f-6907-44ff-a87f-b70ef2515300-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/13/opinion/columnists/omarosa-unhinged-book-trump-cult.html",
+            "description": "Omarosa Manigault Newman has useful knowledge of our ruling clique.",
+            "publishedAt": "2018-08-13T20:33:58Z"
         },
         {
+            "author": "HELENE COOPER and JULIAN E. BARNES",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "MICHAEL D. SHEAR",
-            "title": "Trump Reimbursed Lawyer for Hush Money Paid to Stormy Daniels, Giuliani Says",
-            "description": "President Trump in April on Air Force One, where he was asked specifically whether he knew about the payment to a pornographic film actress, Stephanie Clifford. Mr. Trump said \u201cno\u201d and referred questions to his personal lawyer.",
-            "url": "https://www.nytimes.com/2018/05/02/us/politics/trump-michael-cohen-stormy-daniels-giuliani.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/04/09/opinion/03dc-stormy/03dc-stormy--facebookJumbo-v2.jpg",
-            "publishedAt": "2018-05-03T02:46:29Z"
+            "title": "U.S. Officials Scrambled Behind the Scenes to Shield NATO Deal From Trump",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/09/us/politics/09DC-NATO-1/09DC-NATO-1-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/09/us/politics/nato-summit-trump.html",
+            "description": "John R. Bolton, the national security adviser, pushed NATO ambassadors to finish a critical policy document before the alliance\u2019s summit meeting last month so the president could not reject it.",
+            "publishedAt": "2018-08-09T19:30:20Z"
         },
         {
+            "author": null,
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "U.S. STATE DEPARTMENT",
-            "title": "Trump Announces Airstrikes Against Syria",
-            "description": "In an address from the White House, President Trump said the United States and European allies sought to punish Syria\u2019s president for a suspected chemical attack.",
-            "url": "https://www.nytimes.com/video/us/politics/100000005849938/president-trump-announces-airstrikes-syria.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/04/14/world/14syriaattack-span/14syriaattack-span-videoSixteenByNine1050.jpg",
-            "publishedAt": "2018-04-14T02:01:53Z"
+            "title": "New York Congressman Chris Collins Is Charged With Insider Trading",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/09/nyregion/09congressman/09congressman-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/08/nyregion/chris-collins-insider-trading.html",
+            "description": "Representative Collins, one of President Trump\u2019s earliest and most vocal supporters, is accused of using inside information about a new drug to avoid losses.",
+            "publishedAt": "2018-08-08T14:20:54Z"
         },
         {
+            "author": "MITCH SMITH",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "NIRAJ CHOKSHI",
-            "title": "Trump Voters Driven by Fear of Losing Status, Not Economic Anxiety, Study Finds",
-            "description": "A Trump supporter at a campaign rally in Sacramento in June 2016. A new study found that many Trump voters were driven by fear of losing their status in society.",
-            "url": "https://www.nytimes.com/2018/04/24/us/politics/trump-economic-anxiety.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/04/23/us/24trumpvoters/24trumpvoters-facebookJumbo.jpg",
-            "publishedAt": "2018-04-24T12:45:00Z"
+            "title": "In Kansas, Another Close Race, as Kobach and Colyer Remain Deadlocked",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/08/us/08kansas-kobach-speech/08kansas-kobach-speech-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/08/us/politics/kansas-primary-kobach-colyer.html",
+            "description": "After a long night of waiting for results, Kansas gubernatorial candidate Kris Kobach, with his wife, Heather, told supporters the election was too close to call early Wednesday.",
+            "publishedAt": "2018-08-08T06:55:48Z"
         },
         {
+            "author": "GIOVANNI RUSSONELLO",
             "source": {
                 "id": "the-new-york-times",
                 "name": "The New York Times"
             },
-            "author": "CHRIS STANFORD",
-            "title": "Ronny Jackson, Debbie Lesko, Finland: Your Wednesday Briefing",
-            "description": "President Trump and the first lady, Melania Trump, welcomed President Emmanuel Macron of France and his wife, Brigitte Macron, to the White House for a state dinner on Tuesday.",
-            "url": "https://www.nytimes.com/2018/04/25/briefing/ronny-jackson-debbie-lesko-finland.html",
-            "urlToImage": "https://static01.nyt.com/images/2018/04/25/us/politics/25US-ambriefing-AMCORE/merlin_137281683_bfb2b1ca-5379-4854-bec8-a0c24e3f78d6-facebookJumbo.jpg",
-            "publishedAt": "2018-04-25T09:45:39Z"
+            "title": "Best of Late Night: Trevor Noah Wonders if Paul Manafort Is Secretly Proud of Rick Gates",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/08/arts/08latenight1/08latenight1-facebookJumbo.png",
+            "url": "https://www.nytimes.com/2018/08/08/arts/television/trevor-noah-paul-manafort-rick-gates.html",
+            "description": "\u201cThis is hilarious,\u201d Trevor Noah said of Rick Gates\u2019s testimony against his former boss, Paul Manafort. \u201cHe\u2019s confessing to stealing from the same guy that he was committing crimes with.\u201d",
+            "publishedAt": "2018-08-08T09:06:23Z"
+        },
+        {
+            "author": "MITCH SMITH and JONATHAN MARTIN",
+            "source": {
+                "id": "the-new-york-times",
+                "name": "The New York Times"
+            },
+            "title": "Kansas and Ohio Races Remain Too Close to Call",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/09/us/09vote-alpha/09vote-alpha-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/08/us/politics/ohio-kansas-elections-results.html",
+            "description": "In the Kansas Republican primary race for governor, Kris W. Kobach was ahead of Gov. Jeff Colyer by just 191 votes with all precincts reporting on Wednesday morning.",
+            "publishedAt": "2018-08-08T13:57:43Z"
+        },
+        {
+            "author": "KENDRA PIERRE-LOUIS, CORAL DAVENPORT and TRYGGVI ADALBJORNSSON",
+            "source": {
+                "id": "the-new-york-times",
+                "name": "The New York Times"
+            },
+            "title": "Climate Fwd:: Why the Arctic Needs Mosquitoes",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/08/climate/08cli-newsletter-mosquito/08cli-newsletter-mosquito-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/08/climate/why-the-arctic-needs-mosquitoes.html",
+            "description": "In this week's newsletter, we've got a bit about everyone's favorite summer pest, and about Trump\u2019s plan to freeze standards on automobile pollution.",
+            "publishedAt": "2018-08-08T20:56:03Z"
         }
-    ]
+    ],
+    "status": "ok"
 }

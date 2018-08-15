@@ -21,7 +21,9 @@ from form.views import index
 
 urlpatterns = [
     path('', index ),
+    url(r'^index/$', views.index, name='index'),
     url(r'^datavis/$', views.datavis, name='datavis'),
     url(r'^wordcloud/$', views.wordcloud, name='wordcloud'),
+    url(r'^locationcloud/$', views.locationcloud, name='locationcloud'),
     path('admin/', admin.site.urls),
 ]

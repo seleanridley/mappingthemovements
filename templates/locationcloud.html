@@ -33,8 +33,7 @@
   </nav>
 <!-- End Navigation -->
 
-
-  <!-- grid -->
+  <div class="container-fluid" id="home">
     <div class="row">
      <div class="col-md-6 grid">
        <div id='cloud-container'></div>
@@ -43,7 +42,7 @@
             <script>
               WordCloud({
                 container: '#cloud-container',
-                data: "{% static 'json/twitterWCData.json' %}"
+                data: "{% static 'json/twitterLCData.json' %}"
               });
           </script>
     </div>

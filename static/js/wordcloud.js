@@ -1,6 +1,6 @@
 function WordCloud(options) {
   var margin = {top: 70, right: 100, bottom: 0, left: 100},
-      w = 1200 - margin.left - margin.right,
+      w = 800 - margin.left - margin.right,
       h = 400 - margin.top - margin.bottom;
 
   // create the svg
@@ -60,6 +60,7 @@ function WordCloud(options) {
     .style("font-family", "Impact")
     .style("fill", function(d, i) { return colorMap[~~(arng() *2)]; })
     .attr("text-anchor", "middle")
+    .attr("class", "pull-left")
     .attr("transform", function(d) {
       return "translate(" + [d.x, d.y] + ")rotate(" + d.rotate + ")";
     })
