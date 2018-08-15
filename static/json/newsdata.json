@@ -1,246 +1,246 @@
 {
-    "totalResults": 2300,
+    "status": "ok",
     "articles": [
         {
-            "author": "SHARON LaFRANIERE",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "The New York Times",
+                "id": "the-new-york-times"
             },
-            "title": "Top Trump Campaign Aides Are Portrayed as Corrupt at Manafort Trial",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/08/us/08dc-manafort-print/08dc-manafort-print-facebookJumbo-v2.jpg",
-            "url": "https://www.nytimes.com/2018/08/07/us/politics/manafort-trial-gates-testify.html",
-            "description": "Rick Gates, a top campaign aide to President Trump, detailed in federal court on Tuesday a multiyear fraud by the former Trump campaign chairman Paul Manafort. The defense took aim at Mr. Gates\u2019s credibility.",
-            "publishedAt": "2018-08-07T23:04:41Z"
+            "title": "Has Anything Changed in Post-#MeToo Hollywood?",
+            "author": "NELL SCOVELL",
+            "description": "The silence surrounding Leslie Moonves shows that even now, entertainment executives aren\u2019t ready to give up their perks without a fight.",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/09/opinion/09scovell/09scovell-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/09/opinion/les-moonves-metoo-harassment.html",
+            "publishedAt": "2018-08-09T20:12:45Z"
         },
         {
-            "author": "MAGGIE HABERMAN",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "The New York Times",
+                "id": "the-new-york-times"
             },
-            "title": "Trump Escalates Attack on Sessions, Calling Him \u2018Scared Stiff\u2019",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/12/us/12dc-Sessions/merlin_142231509_0b385816-46fb-4240-9b17-9418b6bdefb1-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/11/us/politics/trump-sessions-russia.html",
-            "description": "President Trump hosting members of the New Jersey chapter of Bikers for Trump at his golf club in Bedminster. Motorcyclists in the United States tend to cover a demographic that includes a bulk of the president\u2019s base, predominantly working-class men over 50 \u2026",
-            "publishedAt": "2018-08-11T22:26:25Z"
+            "title": "Representative Keith Ellison Denies Abuse Allegations About Ex-Girlfriend",
+            "author": "MATTHEW HAAG",
+            "description": "Mr. Ellison, Democrat of Minnesota, has denied allegations that he had emotionally and physically abused a former girlfriend, Karen Monahan.",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/14/us/14XP-ELLISON-01/14XP-ELLISON-01-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/13/us/politics/keith-ellison-abuse-karen-monahan.html",
+            "publishedAt": "2018-08-13T19:13:07Z"
         },
         {
-            "author": "ANNIE CORREAL and EMILY COCHRANE",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "The New York Times",
+                "id": "the-new-york-times"
             },
-            "title": "Melania Trump\u2019s Parents Become U.S. Citizens as Lawyer Acknowledges \u2018Chain Migration\u2019",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/10/nyregion/10melaniaparents-alpha/10melaniaparents-alpha-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/09/nyregion/melania-trumps-parents-become-us-citizens.html",
-            "description": "Viktor and Amalija Knavs had a private naturalization ceremony in Lower Manhattan, after being sponsored by their daughter in a program President Trump has railed against.",
-            "publishedAt": "2018-08-09T20:24:26Z"
+            "title": "What Happens to #MeToo When a Feminist Is the Accused?",
+            "author": "ZOE GREENBERG",
+            "description": "Nimrod Reitman accused his former N.Y.U. graduate school adviser, Avital Ronell, of sexually harassing him, and the university found her responsible. But some leading feminist scholars have supported her in ways that echo the defenses of male harassers.",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/14/nyregion/14nyu/00nyu-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/13/nyregion/sexual-harassment-nyu-female-professor.html",
+            "publishedAt": "2018-08-13T20:26:57Z"
         },
         {
-            "author": "GIOVANNI RUSSONELLO",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "The Huffington Post",
+                "id": "the-huffington-post"
             },
-            "title": "Best of Late Night: Colbert Isn\u2019t Surprised by Anything Omarosa Manigault Newman Says",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/14/arts/14latenight1/14latenight1-facebookJumbo.png",
-            "url": "https://www.nytimes.com/2018/08/14/arts/television/stephen-colbert-omarosa-manigault-newman.html",
-            "description": "\u201cFinally, we have proof that the guy who refused to rent to black tenants\u201d is a racist, Stephen Colbert said, referring sarcastically to President Trump.",
-            "publishedAt": "2018-08-14T10:34:20Z"
+            "title": "\u2018Late Night\u2019 Writer Solves One #MeToo Problem",
+            "author": "Carla Baranauckas",
+            "description": "\"I took all of the classic art made by sketchy dudes, and I remade it so you can enjoy it guilt free.\"",
+            "urlToImage": "https://img.huffingtonpost.com/asset/5b73a03a200000420034a5ee.jpeg?cache=6ymKHZ4o5l&ops=1200_630",
+            "url": "https://www.huffingtonpost.com/entry/amber-ruffin-of-late-night-solves-one-metoo-problem_us_5b739eefe4b0df9b093a5261",
+            "publishedAt": "2018-08-15T08:06:53Z"
         },
         {
-            "author": "CHRISTOPHER BUSKIRK",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "ABC News",
+                "id": "abc-news"
             },
-            "title": "Let\u2019s Not Throw the Word Treason Around",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/07/opinion/07Buskirk1/07Buskirk1-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/08/opinion/trump-treason-democrats-merkley-hoyer.html",
-            "description": "President Trump received a warm welcome on Saturday when he arrived for a rally at Olentangy Orange High School in Lewis Center, Ohio.",
-            "publishedAt": "2018-08-08T09:45:03Z"
+            "title": "Progressive candidates bounce back as GOP eyes Midwest races",
+            "author": "Kendall Karson and John Verhovek",
+            "description": "Candidates in Minnesota and Vermont made history Tuesday night, while a former GOP presidential candidate's comeback bid fell short in a key gubernatorial race.",
+            "urlToImage": "https://s.abcnews.com/images/Politics/ilhan-omar-ap-mo-20180815_hpMain_16x9_992.jpg",
+            "url": "https://abcnews.go.com/Politics/progressive-candidates-bounce-back-gop-eyes-midwest-races/story?id=57183800",
+            "publishedAt": "2018-08-15T09:18:45Z"
         },
         {
-            "author": "THOMAS L. FRIEDMAN",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "Al Jazeera English",
+                "id": "al-jazeera-english"
             },
-            "title": "What if Mother Nature Is on the Ballot in 2020?",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/14/opinion/14friedman/14friedman-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/14/opinion/2020-election-climate-change-trump.html",
-            "description": "Democrats could have a strong issue to run on if the extreme weather persists and President Trump continues to dismiss climate change.",
-            "publishedAt": "2018-08-14T23:15:32Z"
-        },
-        {
-            "author": "NOAH WEILAND",
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "Before White Supremacists\u2019 Rally, Trump Declines to Condemn Them Specifically",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/12/us/12dc-protest-p1/merlin_139933959_65abb0cd-4490-45f5-a0fb-817ccb502649-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/11/us/politics/unite-the-right-2018-dc-rally.html",
-            "description": "White nationalists clashing with counterdemonstrators in Charlottesville, Va., last year. With an anniversary rally planned in Washington on Sunday, the authorities have planned for weeks to avoid a repeat of last year\u2019s clashes.",
-            "publishedAt": "2018-08-11T19:19:08Z"
-        },
-        {
-            "author": "JOUMANA KHATIB and MARCUS PAYADUE",
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "Space Force, Trump, Yemen: Your Thursday Evening Briefing",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/09/briefing/09pmBriefing-US-core-trypt/09pmBriefing-US-core-trypt-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/09/briefing/space-force-trump-yemen.html",
-            "description": "Here\u2019s what you need to know at the end of the day.",
-            "publishedAt": "2018-08-09T22:02:51Z"
-        },
-        {
-            "author": "ALAN FEUER",
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "Roger Stone Associate Is Subpoenaed in Russia Investigation",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/11/us/politics/11dc-stone/11dc-stone-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/10/us/politics/roger-stone-russia-investigation.html",
-            "description": "Randy Credico, a New York radio personality, has been identified as the intermediary between Roger J. Stone Jr., a veteran adviser to President Trump, and Julian Assange, the founder of WikiLeaks.",
-            "publishedAt": "2018-08-10T18:15:19Z"
-        },
-        {
-            "author": "CHARLIE SAVAGE",
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "Trump Claims Power to Bypass Limits Set by Congress in Defense Bill",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/15/us/politics/15dc-signing/15dc-signing-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/14/us/politics/trump-signing-statements.html",
-            "description": "In the latest example of his broad vision of executive power, President Trump used a signing statement to challenge dozens of provisions, including limits on Russia and North Korea.",
-            "publishedAt": "2018-08-14T20:46:41Z"
-        },
-        {
-            "author": "KALY SOTO",
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "11 of Our Best Weekend Reads",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/11/autossell/11weekend-reads-promo-trypt/merlin_142206867_9de1881c-fd14-485c-b478-a0fc85250412-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/11/arts/11-of-our-best-weekend-reads.html",
-            "description": "Don\u2019t ask Paul Ryan about President Trump anymore. How two cyclists lost their lives in Tajikistan. We\u2019re not prepared for global warming. Why the songs of summer sound the same. And more.",
-            "publishedAt": "2018-08-11T09:00:02Z"
-        },
-        {
-            "author": "GIOVANNI RUSSONELLO",
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "Best of Late Night: Kimmel Hammers Trump for Changing His Story on 2016 Meeting",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/07/arts/07latenight1/07latenight1-facebookJumbo.png",
-            "url": "https://www.nytimes.com/2018/08/07/arts/television/jimmy-kimmel-trump-jr-tweet-information-opponent.html",
-            "description": "Jimmy Kimmel took aim at the president for tweeting that Donald Trump Jr. met with Russian officials before the election \u201cto get information on an opponent.\u201d",
-            "publishedAt": "2018-08-07T08:56:08Z"
-        },
-        {
-            "author": "MONICA DAVEY",
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "Wisconsin Faces a Political Crossroads Tuesday. Which Way Will It Go?",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/12/us/12WISCONSIN-lede/12WISCONSIN-lede-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/12/us/politics/wisconsin-scott-walker-election.html",
-            "description": "Wisconsin has been in the throes of a political identity crisis for years, one exacerbated by Donald J. Trump\u2019s surprise win in the state in 2016. From cities to rural areas like Reedsburg, the state faces a defining moment in the 2018 midterm elections, star\u2026",
-            "publishedAt": "2018-08-12T09:00:09Z"
-        },
-        {
-            "author": "MICHELLE GOLDBERG",
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "Welcome to the Resistance, Omarosa",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/13/opinion/13goldberg-01/merlin_142300929_fbf62a5f-6907-44ff-a87f-b70ef2515300-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/13/opinion/columnists/omarosa-unhinged-book-trump-cult.html",
-            "description": "Omarosa Manigault Newman has useful knowledge of our ruling clique.",
-            "publishedAt": "2018-08-13T20:33:58Z"
-        },
-        {
-            "author": "HELENE COOPER and JULIAN E. BARNES",
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "U.S. Officials Scrambled Behind the Scenes to Shield NATO Deal From Trump",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/09/us/politics/09DC-NATO-1/09DC-NATO-1-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/09/us/politics/nato-summit-trump.html",
-            "description": "John R. Bolton, the national security adviser, pushed NATO ambassadors to finish a critical policy document before the alliance\u2019s summit meeting last month so the president could not reject it.",
-            "publishedAt": "2018-08-09T19:30:20Z"
-        },
-        {
+            "title": "Has #MeToo failed?",
             "author": null,
-            "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
-            },
-            "title": "New York Congressman Chris Collins Is Charged With Insider Trading",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/09/nyregion/09congressman/09congressman-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/08/nyregion/chris-collins-insider-trading.html",
-            "description": "Representative Collins, one of President Trump\u2019s earliest and most vocal supporters, is accused of using inside information about a new drug to avoid losses.",
-            "publishedAt": "2018-08-08T14:20:54Z"
+            "description": "Feminist icon Germaine Greer on why she criticises the #MeToo movement.",
+            "urlToImage": null,
+            "url": "https://www.aljazeera.com/programmes/headtohead/2018/07/metoo-failed-180717145036789.html",
+            "publishedAt": "2018-08-10T08:58:54Z"
         },
         {
-            "author": "MITCH SMITH",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "The New York Times",
+                "id": "the-new-york-times"
             },
-            "title": "In Kansas, Another Close Race, as Kobach and Colyer Remain Deadlocked",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/08/us/08kansas-kobach-speech/08kansas-kobach-speech-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/08/us/politics/kansas-primary-kobach-colyer.html",
-            "description": "After a long night of waiting for results, Kansas gubernatorial candidate Kris Kobach, with his wife, Heather, told supporters the election was too close to call early Wednesday.",
-            "publishedAt": "2018-08-08T06:55:48Z"
+            "title": "Corner Office: Paula Schneider on Running American Apparel and Fighting Cancer",
+            "author": "DAVID GELLES",
+            "description": "A breast cancer survivor who ran one of the most notorious brands in fashion is now C.E.O. of Susan G. Komen, working to raise money for a cure.",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/12/business/12CORNEROFFICE02/12CORNEROFFICE02-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/10/business/paula-schneider-susan-komen-corner-office.html",
+            "publishedAt": "2018-08-10T11:00:04Z"
         },
         {
-            "author": "GIOVANNI RUSSONELLO",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "The New York Times",
+                "id": "the-new-york-times"
             },
-            "title": "Best of Late Night: Trevor Noah Wonders if Paul Manafort Is Secretly Proud of Rick Gates",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/08/arts/08latenight1/08latenight1-facebookJumbo.png",
-            "url": "https://www.nytimes.com/2018/08/08/arts/television/trevor-noah-paul-manafort-rick-gates.html",
-            "description": "\u201cThis is hilarious,\u201d Trevor Noah said of Rick Gates\u2019s testimony against his former boss, Paul Manafort. \u201cHe\u2019s confessing to stealing from the same guy that he was committing crimes with.\u201d",
-            "publishedAt": "2018-08-08T09:06:23Z"
+            "title": "South Korea\u2019s #MeToo Movement Dealt Blow by Politician\u2019s Acquittal",
+            "author": "CHOE SANG-HUN",
+            "description": "Ahn Hee-jung, center, was the most prominent figure to be accused of sexual misconduct since the #MeToo movement gained force in South Korea. Kim Ji-eun, right, his former secretary, accused him of rape.",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/15/world/15skorea-metoo/15skorea-metoo-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/14/world/asia/south-korea-metoo-politician-acquittal.html",
+            "publishedAt": "2018-08-14T06:04:37Z"
         },
         {
-            "author": "MITCH SMITH and JONATHAN MARTIN",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "The New York Times",
+                "id": "the-new-york-times"
             },
-            "title": "Kansas and Ohio Races Remain Too Close to Call",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/09/us/09vote-alpha/09vote-alpha-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/08/us/politics/ohio-kansas-elections-results.html",
-            "description": "In the Kansas Republican primary race for governor, Kris W. Kobach was ahead of Gov. Jeff Colyer by just 191 votes with all precincts reporting on Wednesday morning.",
-            "publishedAt": "2018-08-08T13:57:43Z"
+            "title": "Taraji P. Henson Reads Tracy Morgan\u2019s Mind in \u2018What Men Want\u2019",
+            "author": "BRUCE FRETTS",
+            "description": "With a new trailer out now, the movie is a follow-up of sorts to the Mel Gibson smash \u201cWhat Women Want.\u201d",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/15/movies/15what-men-want-trailer1/15what-men-want-trailer1-facebookJumbo.png",
+            "url": "https://www.nytimes.com/2018/08/14/movies/what-men-want-taraji-p-henson.html",
+            "publishedAt": "2018-08-14T20:51:51Z"
         },
         {
-            "author": "KENDRA PIERRE-LOUIS, CORAL DAVENPORT and TRYGGVI ADALBJORNSSON",
             "source": {
-                "id": "the-new-york-times",
-                "name": "The New York Times"
+                "name": "The New York Times",
+                "id": "the-new-york-times"
             },
-            "title": "Climate Fwd:: Why the Arctic Needs Mosquitoes",
-            "urlToImage": "https://static01.nyt.com/images/2018/08/08/climate/08cli-newsletter-mosquito/08cli-newsletter-mosquito-facebookJumbo.jpg",
-            "url": "https://www.nytimes.com/2018/08/08/climate/why-the-arctic-needs-mosquitoes.html",
-            "description": "In this week's newsletter, we've got a bit about everyone's favorite summer pest, and about Trump\u2019s plan to freeze standards on automobile pollution.",
-            "publishedAt": "2018-08-08T20:56:03Z"
+            "title": "How Argentina Has Made Halting Progress on Abortion Rights",
+            "author": "JAVIER CORRALES",
+            "description": "We could marvel at the political resilience of the country\u2019s conservatives, but I prefer to admire how close feminists came to achieving success.",
+            "urlToImage": "https://static01.nyt.com/images/2018/08/10/opinion/10corrales1/10corrales1-facebookJumbo.jpg",
+            "url": "https://www.nytimes.com/2018/08/10/opinion/how-argentina-has-made-halting-progress-on-abortion-rights.html",
+            "publishedAt": "2018-08-10T18:05:17Z"
+        },
+        {
+            "source": {
+                "name": "The Washington Post",
+                "id": "the-washington-post"
+            },
+            "title": "Primary elections: Wisconsin and Minnesota voters pick nominees in key contests - Washington Post",
+            "author": null,
+            "description": "Washington Post Primary elections: Wisconsin and Minnesota voters pick nominees in key contests Washington Post Arrest records, a transgender glass ceiling and the specter of President Trump all loomed large Tuesday as polls began to close in primary contests\u2026",
+            "urlToImage": "https://www.washingtonpost.com/resizer/nYdSpJaK_vOrw_5EXDGSiFgLEGs=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/KO3DIHE734I6RA6SOAQDXDL3IQ.jpg",
+            "url": "https://www.washingtonpost.com/powerpost/primary-elections-minnesota-wisconsin-vermont-connecticut/2018/08/13/94646364-9f29-11e8-8e87-c869fe70a721_story.html",
+            "publishedAt": "2018-08-14T23:22:21Z"
+        },
+        {
+            "source": {
+                "name": "CNN",
+                "id": "cnn"
+            },
+            "title": "Ex-political rising acquitted of sexual assault",
+            "author": "Joshua Berlinger and Jake Kwon, CNN",
+            "description": "A former South Korean governor and one-time presidential contender has been acquitted of sexual assault by coercion in one of the highest profile cases to emerge from the MeToo movement in South Korea.",
+            "urlToImage": "https://cdn.cnn.com/cnnnext/dam/assets/180814105559-ahn-hee-jung-super-tease.jpg",
+            "url": "https://www.cnn.com/2018/08/14/asia/ahn-hee-jung-south-korea-intl/index.html",
+            "publishedAt": "2018-08-14T05:03:18Z"
+        },
+        {
+            "source": {
+                "name": "The Wall Street Journal",
+                "id": "the-wall-street-journal"
+            },
+            "title": "Immigrants, With Their Split Identities, Trigger Soul-Searching in Germany",
+            "author": "Bojan Pancevski",
+            "description": "A debate about new immigration legislation is heightening political tensions in Germany, challenging complex, decades-old attitudes regarding nationality and ethnicity\u2014and raising questions about Germans\u2019 willingness and capacity to integrate foreigners and t\u2026",
+            "urlToImage": "https://images.wsj.net/im-22244/social",
+            "url": "https://www.wsj.com/articles/immigrants-with-their-split-identities-trigger-soul-searching-in-germany-1534334402",
+            "publishedAt": "2018-08-15T12:46:24Z"
+        },
+        {
+            "source": {
+                "name": "CBS News",
+                "id": "cbs-news"
+            },
+            "title": "Women weigh in on women in politics and on Ivanka Trump",
+            "author": "CBS News",
+            "description": "CBS News / Refinery 29 surveyed women 18 - 35 years of age -- younger women are more likely to say focus on #MeToo will improve things in the long run; they also weighed in on Ivanka Trump",
+            "urlToImage": "https://cbsnews3.cbsistatic.com/hub/i/r/2018/05/30/b71dde34-844a-4eb3-8887-2e7b952ad2e6/thumbnail/1200x630/80609a745eee2ae4a5350c44d343b1cd/cbsn-fusion-ivanka-trump-abruptly-ends-media-phone-call-thumbnail-1579751-640x360.jpg",
+            "url": "https://www.cbsnews.com/news/women-weigh-in-on-women-in-politics-and-on-ivanka-trump/",
+            "publishedAt": "2018-08-10T22:13:15Z"
+        },
+        {
+            "source": {
+                "name": "CBS News",
+                "id": "cbs-news"
+            },
+            "title": "Lindsay Lohan says some #MeToo accusers look \"weak\"",
+            "author": "Andrea Park",
+            "description": "Lindsay Lohan is sparking controversy again, months after saying she felt sorry for Harvey Weinstein",
+            "urlToImage": "https://cbsnews2.cbsistatic.com/hub/i/r/2016/12/30/e9f58603-d3b2-4781-98a8-12205c856e1e/thumbnail/1200x630g2/0b0e8bcb4c620f7f2c192fdbd663bf35/gettyimages-489161138.jpg",
+            "url": "https://www.cbsnews.com/news/lindsay-lohan-says-metoo-movement-makes-women-look-weak/",
+            "publishedAt": "2018-08-09T16:02:50Z"
+        },
+        {
+            "source": {
+                "name": "CBS News",
+                "id": "cbs-news"
+            },
+            "title": "Favorites for Al Franken's Minnesota Senate seat reflect #MeToo's rise",
+            "author": "AP",
+            "description": "Franken's successor, Tina Smith\u200b, and the endorsed Republican candidate, state Sen. Karin Housley, were heavy favorites in their respective races",
+            "urlToImage": "https://cbsnews2.cbsistatic.com/hub/i/r/2018/05/02/dd7c093a-c039-4abd-b9b7-8afefeae4831/thumbnail/1200x630/5c1d42f8b0880b7326cd844aa14e8a4f/rtx3kdmp.jpg",
+            "url": "https://www.cbsnews.com/news/favorites-for-al-frankens-minnesota-seat-reflect-metoos-rise/",
+            "publishedAt": "2018-08-14T10:58:47Z"
+        },
+        {
+            "source": {
+                "name": "CBS News",
+                "id": "cbs-news"
+            },
+            "title": "Al Franken's Senate seat up for grabs in wake of #MeToo, and what else to watch in politics this week",
+            "author": "Caitlin Conant",
+            "description": "Here are the top trends and people to watch in politics this week\u2026ex-presidential candidates, an ex-con, transgender candidates...and one 14-year-old who's running for governor",
+            "urlToImage": "https://cbsnews2.cbsistatic.com/hub/i/r/2017/10/02/53797382-3667-4492-9863-e89cd168a0c7/thumbnail/1200x630/2e226ef0d89cf378ebbe75b68466d280/gettyimages-698662778.jpg",
+            "url": "https://www.cbsnews.com/news/al-frankens-senate-seat-up-for-grabs-in-wake-of-metoo-and-what-else-to-watch-in-politics-this-week/",
+            "publishedAt": "2018-08-13T02:51:06Z"
+        },
+        {
+            "source": {
+                "name": "CBS News",
+                "id": "cbs-news"
+            },
+            "title": "A popular film category is coming to the Oscars",
+            "author": "CBS/AP",
+            "description": "The Oscars are also promising a brisk three-hour ceremony after this year's marathon broadcast lagged in the ratings",
+            "urlToImage": "https://cbsnews1.cbsistatic.com/hub/i/r/2018/08/08/2a131cb9-1d35-4b7a-9cd1-8c725c8c9eb4/thumbnail/1200x630g2/6fc2555401c14925cd685b07ef583347/oscars.jpg",
+            "url": "https://www.cbsnews.com/news/oscars-popular-film-category-academy-awards-2018-08-08/",
+            "publishedAt": "2018-08-08T20:26:50Z"
+        },
+        {
+            "source": {
+                "name": "CBS News",
+                "id": "cbs-news"
+            },
+            "title": "Primary night takeaways: Democratic optimism, women advance",
+            "author": "AP",
+            "description": "Many of the districts Democrats are hoping to flip in November are more favorable to them than the Ohio 12th",
+            "urlToImage": "https://cbsnews3.cbsistatic.com/hub/i/r/2018/08/08/87212417-2c98-4be4-be25-c059dbd57c3f/thumbnail/1200x630/13e96369f65fef56ba7c585b114a18d8/gettyimages-1012961424.jpg",
+            "url": "https://www.cbsnews.com/news/primary-night-takeaways-democratic-optimism-women-advance/",
+            "publishedAt": "2018-08-08T11:27:57Z"
+        },
+        {
+            "source": {
+                "name": "The Washington Post",
+                "id": "the-washington-post"
+            },
+            "title": "How Aretha Franklin's 'Respect' became an anthem for civil rights and feminism - Washington Post",
+            "author": "https://www.facebook.com/deneen.l.brown",
+            "description": "Washington Post How Aretha Franklin's 'Respect' became an anthem for civil rights and feminism Washington Post It was Valentine's Day 1967 when Aretha Franklin sat down at a piano in the Atlantic Records studio in New York and recorded \u201cRespect.\u201d The Queen of\u2026",
+            "urlToImage": "https://www.washingtonpost.com/resizer/kD4D6LDzmcMUvhsJqzH3ACuQEqs=/1484x0/arc-anglerfish-washpost-prod-washpost.s3.amazonaws.com/public/JTBG3FV3TAZW5IJP7BVRUMMGU4.jpg",
+            "url": "https://www.washingtonpost.com/news/retropolis/wp/2018/08/14/how-aretha-franklins-respect-became-an-anthem-for-civil-rights-and-feminism/",
+            "publishedAt": "2018-08-14T17:42:43Z"
         }
     ],
-    "status": "ok"
+    "totalResults": 56
 }

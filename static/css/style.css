@@ -10,3 +10,24 @@
 svg text{
   font-family: Helvetica, sans-serif;
   font-size: 14px;
+}
+
+.line {
+    fill: none;
+    stroke: steelblue;
+    stroke-width: 2px;
+  }
+
+.button {
+  border: solid 0.5px #DDD;
+  background-color: black;
+  color: white;
+}
+  .arc text {
+    font: 10px sans-serif;
+    text-anchor: middle;
+  }
+
+  .arc path {
+    stroke: #fff;
+  }

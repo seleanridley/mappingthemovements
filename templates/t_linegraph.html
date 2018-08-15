@@ -12,15 +12,15 @@
       </a>
     </div>
 
+<!-- Visualization Selection -->
     <div id="selector" class="menubar">
     <select class="form-control options fa fa-search fa-fw pull-right" style="width:90%">
-        <option >Change Visualization</option>
-        <option value="{% url 't_linegraph' %}">Line Graph</option>
+        <option>Change Visualization</option>
+        <option value="{% url 'wordcloud' %}">Word Cloud</option>
         <option value="{% url 'locationcloud' %}">Location Cloud</option>
-        <option value="{% url 'piechart' %}">Pie Chart</option>
-        <option value="{% url 'bargraph' %}">Bar Graph</option>
     </select>
 </div>
+
 <script>
     $(function(){
         // bind change event to select
@@ -35,19 +35,15 @@
  </script>
   </nav>
 <!-- End Navigation -->
-
-
-  <!-- grid -->
     <div class="row">
      <div class="col-md-6 grid">
-       <div id='cloud-container'></div>
-
-          <script src="{% static 'js/wordcloud.js' %}"></script>
-            <script>
-              WordCloud({
-                container: '#cloud-container',
-                data: "{% static 'json/twitterWCData.json' %}"
-              });
+     <div class="pull-left" id='cloud-container'></div>
+          <script src="{% static 'js/linegraph.js' %}"></script>
+          <script>
+            LineGraph({
+              container: '#cloud-container',
+              data: "{% static 'json/twitterEGData.json' %}"
+            });
           </script>
     </div>
 

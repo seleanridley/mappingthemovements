@@ -14,8 +14,9 @@
 
     <div id="selector" class="menubar">
     <select class="form-control options fa fa-search fa-fw pull-right" style="width:90%">
-        <option value="{% url 'datavis' %}">Line Graph</option>
-        <option value="{% url 'locationcloud' %}">Location Cloud</option>
+        <option >Change Visualization</option>
+        <option value="{% url 't_linegraph' %}">Line Graph</option>
+        <option value="{% url 'wordcloud' %}">Word Cloud</option>
     </select>
 </div>
 <script>
@@ -33,7 +34,6 @@
   </nav>
 <!-- End Navigation -->
 
-  <div class="container-fluid" id="home">
     <div class="row">
      <div class="col-md-6 grid">
        <div id='cloud-container'></div>

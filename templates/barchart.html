@@ -18,7 +18,6 @@
         <option value="{% url 't_linegraph' %}">Line Graph</option>
         <option value="{% url 'locationcloud' %}">Location Cloud</option>
         <option value="{% url 'piechart' %}">Pie Chart</option>
-        <option value="{% url 'bargraph' %}">Bar Graph</option>
     </select>
 </div>
 <script>
@@ -40,15 +39,59 @@
   <!-- grid -->
     <div class="row">
      <div class="col-md-6 grid">
-       <div id='cloud-container'></div>
+           <script>
+              var xmlhttp = new XMLHttpRequest();
+              var url = "{% static 'json/subredditData.json' %}";
+              var freqs = [];
+              var subreddits = [];
+              xmlhttp.onreadystatechange = function() {
+               if (this.readyState == 4 && this.status == 200) {
+                   var myArr = JSON.parse(this.responseText);
+                   myFunction(myArr);
+               }
+              };
+              xmlhttp.open("GET", url, true);
+              xmlhttp.send();
+              function myFunction(arr) {
+               var i;
+               for(i = 0; i < arr.length; i++) {
+                   subreddits.push(arr[i].subreddit);
+                   freqs.push(arr[i].frequency);
+               }
+              }
 
-          <script src="{% static 'js/wordcloud.js' %}"></script>
-            <script>
-              WordCloud({
-                container: '#cloud-container',
-                data: "{% static 'json/twitterWCData.json' %}"
+              window.onload = function () {
+              var chart = new CanvasJS.Chart("chartContainer", {
+              animationEnabled: true,
+
+              title:{
+               text:"Number of Submissions per Subreddit"
+              },
+              exportEnabled: true,
+              axisX:{
+               interval: 1
+              },
+              axisY2:{
+               interlacedColor: "rgba(1,77,101,.2)",
+               gridColor: "rgba(1,77,101,.1)",
+               title: "Number of Submissions"
+              },
+              data: [{
+               type: "bar",
+               name: "companies",
+               axisYType: "secondary",
+               color: "#014D65",
+               dataPoints: [
+                 { y: freqs[0], label: subreddits[0] },
+                 { y: freqs[1], label: subreddits[1] }
+               ]
+              }]
               });
-          </script>
+              chart.render();
+              };
+    </script>
+
+    <div id="chartContainer" style="height: 800px; width: 600px;"></div>
     </div>
 
     <div class="col-md-6 grid datavis" id="showData">

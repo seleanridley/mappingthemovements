@@ -24,11 +24,17 @@ def index(request):
             form = UserForm()
     return render(request, "index.html", {'form': form})
 
-def datavis(request):
-    return render(request, "datavis.html")
+def t_linegraph(request):
+    return render(request, "t_linegraph.html")
 
 def wordcloud(request):
     return render(request, "wordcloud.html")
 
 def locationcloud(request):
     return render(request, "locationcloud.html")
+
+def piechart(request):
+    return render(request, "piechart.html")
+
+def bargraph(request):
+    return render(request, "barchart.html")
