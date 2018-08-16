@@ -1,15 +1,15 @@
 # mappingthemovements
 Welcome to Mapping the Movements (MTM), a web application design to plot social media and news activity on data visualizations. This readme will walk you through the content of the app and how to effectively use Mapping the Movements.
-----------------------------------------------------------------------------------------------------------------------------
 TABLE OF CONTENTS
+----------------------------------------------------------------------------------------------------------------------------
 
 I. BEFORE USING THE APP
 II. RUNNING THE APP
 III. THE SEARCH PAGE
 IV. RESULTS PAGE
-----------------------------------------------------------------------------------------------------------------------------
 
 I. BEFORE USING THE APP
+----------------------------------------------------------------------------------------------------------------------------
 
 Mapping the Movements requires the user to be running on Google Chrome on any operating system. You must also have a stable internet connection.
 
@@ -27,6 +27,7 @@ pip install twitter
 pip install praw
 
 II. RUNNING THE APP
+----------------------------------------------------------------------------------------------------------------------------
 
 To run the app, navigate to the mappingthemovements folder, and then input the following command on the terminal:
 
@@ -35,6 +36,7 @@ python manage.py runserver
 Then, open your browser and go to http://127.0.0.1:8000/. Mapping the Movements should display the search page.
 
 III. THE SEARCH PAGE
+----------------------------------------------------------------------------------------------------------------------------
 
 When opening up Mapping the Movements, you will be introduced to the app’s search page. From here, you will be able to search a keyword along with a the date range and which social media platform to search through. There are important rules to follow when search:
 
@@ -47,6 +49,7 @@ The app will check if these conditions appear but it’s good practice to follow
 
 
 IV. THE RESULTS PAGE
+----------------------------------------------------------------------------------------------------------------------------
 
 If you have started a search and have not encountered any errors, you will reach the results page. On this page, you will be able to see the data visualization on the left along with top headlines relating to the keyword on the right. It’s important to note when starting a search, a default data visualization is picked and displayed on the results page. 
 
