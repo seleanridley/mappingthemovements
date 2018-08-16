@@ -46,8 +46,10 @@ class UserForm(forms.Form):
             raise forms.ValidationError('You can only select one platform.')
         else:
             ##print('else')
-            if end_date.date() > datetime.datetime.now().date():
+            if end_date.date() > datetime.datetime.now().date() or start_date.date() > datetime.datetime.now().date():
                 raise forms.ValidationError('You can\'t search the future!')
+            if end_date.date() < start_date.date():
+                raise forms.ValidationError('Please make sure the start date is before the end date.')
             if twitter and not reddit:
                 onewk = datetime.datetime.now() - datetime.timedelta(days=7)
                 ##print(onewk)
