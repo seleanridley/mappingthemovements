@@ -1,9 +1,5 @@
-<<<<<<< HEAD
 from django.shortcuts import render, redirect
-=======
-from django.shortcuts import render
 from django.http import HttpResponseRedirect
->>>>>>> master
 from .form import UserForm
 from . import Controller
 

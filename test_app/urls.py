@@ -18,7 +18,6 @@ from django.conf.urls import url
 from django.urls import path
 from form import views
 from form.views import index
-from form.views import datavis
 
 urlpatterns = [
     path('', index ),
